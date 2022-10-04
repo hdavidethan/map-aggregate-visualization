@@ -6,22 +6,47 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import MarkerWrapper from "./MarkerWrapper";
 import { ParkingData } from "./ParkingData";
 import * as turf from "@turf/turf";
+import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
+import QueryType from "../QuerySection/QueryType";
+import mapboxgl from "mapbox-gl";
 
 interface Props {
   markers?: Array<ParkingData>;
   halfHourIndex: number;
-  queryRadius: number;
 }
 
-function MapContainer({ markers, halfHourIndex, queryRadius }: Props) {
+function MapContainer({ markers, halfHourIndex }: Props) {
+  const [queryConfiguration] = useQueryConfiguration();
   const [lng] = useState(-79.9338);
   const [lat] = useState(40.4511);
   const [zoom] = useState(14);
 
-  const circleData = turf.circle([lng, lat], queryRadius, {
+  const circleLat: number = (queryConfiguration.parameters.lat as number) ?? 0;
+  const circleLng: number = (queryConfiguration.parameters.lng as number) ?? 0;
+  const cirlceRadius: number =
+    (queryConfiguration.parameters.radius as number) ?? 0;
+
+  const circleData = turf.circle([circleLng, circleLat], cirlceRadius, {
     steps: 80,
     units: "meters",
   });
+
+  const mapSources: mapboxgl.Sources = {
+    osm: {
+      type: "raster",
+      tiles: ["https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"],
+      tileSize: 256,
+      attribution: "&copy; OpenStreetMap Contributors",
+      maxzoom: 19,
+    },
+  };
+
+  if (queryConfiguration.queryType === QueryType.REAL_TIME_PARKING) {
+    mapSources.circleData = {
+      type: "geojson",
+      data: circleData,
+    };
+  }
 
   return (
     <div className="map-wrapper">
@@ -34,19 +59,7 @@ function MapContainer({ markers, halfHourIndex, queryRadius }: Props) {
         }}
         mapStyle={{
           version: 8,
-          sources: {
-            osm: {
-              type: "raster",
-              tiles: ["https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"],
-              tileSize: 256,
-              attribution: "&copy; OpenStreetMap Contributors",
-              maxzoom: 19,
-            },
-            circleData: {
-              type: "geojson",
-              data: circleData,
-            },
-          },
+          sources: mapSources,
           layers: [
             {
               id: "osm",

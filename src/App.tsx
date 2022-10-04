@@ -1,136 +1,82 @@
 import Editor from "@monaco-editor/react";
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
+import { RecoilRoot } from "recoil";
+import { QueryConfiguration } from "./atoms/queryConfigurationAtom";
 
 import MapContainer from "./components/MapContainer";
+import QuerySection from "./components/QuerySection";
 import locations from "./locations.json";
 import { getDistanceFromLatLonInKm } from "./util/distanceUtils";
 import {
   halfHourToTimeString,
+  jsDateToHalfHour,
   timeRangeToHalfHour,
 } from "./util/halfHourUtils";
 
 function App() {
   const [timeRange, setTimeRange] = useState(0);
-  const [lat, setLat] = useState(40.451);
-  const [lng, setLng] = useState(-79.935);
-  const [radius, setRadius] = useState(300);
   const [output, setOutput] = useState("");
 
-  function calculateOutput() {
+  function calculateOutput(queryConfiguration: QueryConfiguration) {
     let sum = 0;
     for (const location of locations) {
       if (
-        getDistanceFromLatLonInKm(location.lat, location.lng, lat, lng) * 1000 <
-        radius
+        getDistanceFromLatLonInKm(
+          location.lat,
+          location.lng,
+          queryConfiguration.parameters.lat as number,
+          queryConfiguration.parameters.lng as number
+        ) *
+          1000 <
+        queryConfiguration.parameters.radius
       ) {
-        sum += location.parking[timeRange];
+        sum += location.parking[jsDateToHalfHour(new Date())];
       }
     }
     const result = {
       content_type: "sum",
       content_value: sum,
     };
-    setOutput(JSON.stringify(result, null, 2));
+    setOutput(JSON.stringify([result], null, 2));
   }
 
   const halfHourIndex = timeRangeToHalfHour(timeRange);
 
   return (
-    <Container fluid>
-      <Row className="mb-4">
-        <h1>Map-Aggregate Visualizer</h1>
-      </Row>
-      <Row>
-        <Col md={3}>
-          <Form.Label>Select A Query:</Form.Label>
-          <Form.Select className="mb-3">
-            <option value="rt-parking">Real-time Parking</option>
-          </Form.Select>
-          <Form.Label>Center</Form.Label>
-          <Row>
-            <Col>
-              <FloatingLabel
-                controlId="latitudeInput"
-                label="Latitude"
-                className="mb-3"
-              >
-                <Form.Control
-                  value={lat}
-                  onChange={(e) => {
-                    if (e.target.value !== "") {
-                      setLat(parseFloat(e.target.value));
-                    } else {
-                      setLat(0);
-                    }
-                  }}
-                />
-              </FloatingLabel>
-            </Col>
-            <Col>
-              <FloatingLabel
-                controlId="longitudeInput"
-                label="Longitude"
-                className="mb-3"
-              >
-                <Form.Control
-                  value={lng}
-                  onChange={(e) => {
-                    if (e.target.value !== "") {
-                      setLng(parseFloat(e.target.value));
-                    } else {
-                      setLng(0);
-                    }
-                  }}
-                />
-              </FloatingLabel>
-            </Col>
-          </Row>
-          <Form.Label>Radius (m)</Form.Label>
-          <Form.Control
-            className="mb-3"
-            value={radius}
-            onChange={(e) => {
-              if (e.target.value !== "") {
-                setRadius(parseInt(e.target.value));
-              } else {
-                setRadius(0);
-              }
-            }}
-          />
-          <Form.Label>
-            Selected Time: {halfHourToTimeString(halfHourIndex)}
-          </Form.Label>
-          <Form.Range
-            className="mb-3"
-            value={timeRange}
-            onChange={(e) => setTimeRange(e.target.valueAsNumber)}
-          />
-          <Button onClick={() => calculateOutput()}>Run Query</Button>
-        </Col>
-        <Col md={6}>
-          <MapContainer
-            halfHourIndex={halfHourIndex}
-            markers={locations}
-            queryRadius={radius}
-          />
-        </Col>
-        <Col md={3}>
-          <h3>Output</h3>
-          <Editor
-            height="80vh"
-            defaultLanguage="json"
-            options={{ readOnly: true }}
-            value={output}
-          />
-        </Col>
-      </Row>
-    </Container>
+    <RecoilRoot>
+      <Container fluid>
+        <Row className="mt-2">
+          <Col md={3}>
+            <QuerySection calculateOutput={calculateOutput} />
+          </Col>
+          <Col md={6}>
+            <h3>Data Browsing</h3>
+            <Form.Label>
+              Selected Time: {halfHourToTimeString(halfHourIndex)}
+            </Form.Label>
+            <Form.Range
+              className="mb-3"
+              value={timeRange}
+              onChange={(e) => setTimeRange(e.target.valueAsNumber)}
+            />
+            <MapContainer halfHourIndex={halfHourIndex} markers={locations} />
+          </Col>
+          <Col md={3}>
+            <h3>Output</h3>
+            <Editor
+              height="80vh"
+              defaultLanguage="json"
+              options={{ readOnly: true }}
+              value={output}
+            />
+          </Col>
+        </Row>
+      </Container>
+    </RecoilRoot>
   );
 }
 

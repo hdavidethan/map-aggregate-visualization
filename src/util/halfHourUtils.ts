@@ -1,3 +1,13 @@
+export function jsDateToHalfHour(date: Date): number {
+  const timeMs =
+    date.getHours() * 60 * 60 * 1000 +
+    date.getMinutes() * 60 * 1000 +
+    date.getSeconds() * 1000 +
+    date.getMilliseconds();
+  const totalDayMs = 24 * 60 * 60 * 1000;
+  return timeRangeToHalfHour((100 * timeMs) / totalDayMs);
+}
+
 export function halfHourToTimeString(halfHourIndex: number): string {
   const half = halfHourIndex % 2 === 1;
   const hour = Math.floor(halfHourIndex / 2);
