@@ -13,7 +13,6 @@ import ScrollControls from "./ScrollControls";
 function DataBrowsingSection() {
   const [timeScroll, setTimeScroll] = useState(0);
   const [timeRange, setTimeRange] = useState<number[]>([0, 47]);
-  const halfHourIndex = timeRangeToHalfHour(timeScroll);
 
   return (
     <>
@@ -56,7 +55,10 @@ function DataBrowsingSection() {
         setTimeScroll={setTimeScroll}
         className="mb-3"
       />
-      <MapContainer halfHourIndex={halfHourIndex} markers={locations} />
+      <MapContainer
+        halfHourIndex={timeScroll + timeRange[0]}
+        markers={locations}
+      />
     </>
   );
 }
