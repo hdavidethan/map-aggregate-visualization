@@ -9,7 +9,7 @@ import {
   QueryConfiguration,
   useQueryConfiguration,
 } from "../../atoms/queryConfigurationAtom";
-import QueryType from "./QueryType";
+import QueryType, { queryTypeName } from "./QueryType";
 
 interface Props {
   calculateOutput: (queryConfiguration: QueryConfiguration) => void;
@@ -39,11 +39,20 @@ function QuerySection({ calculateOutput }: Props) {
       <Form.Select
         className="mb-3"
         value={queryConfiguration.queryType}
-        onChange={(e) =>
-          setQueryType(QueryType[e.target.value as keyof typeof QueryType])
-        }
+        onChange={(e) => {
+          setQueryType(e.target.value as unknown as QueryType);
+        }}
       >
-        <option value={QueryType.REAL_TIME_PARKING}>Real-time Parking</option>
+        {Object.keys(QueryType)
+          .filter((value) => isNaN(Number(value)))
+          .map((queryTypeKey) => {
+            const queryType = QueryType[queryTypeKey as keyof typeof QueryType];
+            return (
+              <option key={queryType} value={queryType}>
+                {queryTypeName(queryType)}
+              </option>
+            );
+          })}
       </Form.Select>
       <hr />
       <h5>Query Parameters</h5>

@@ -18,6 +18,11 @@ export const defaultParameters: {
     lng: -79.935,
     radius: 300,
   },
+  [QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
+    lat: 40.451,
+    lng: -79.935,
+    radius: 300,
+  },
 };
 
 const queryConfigurationAtom = atom<QueryConfiguration>({

@@ -7,6 +7,10 @@ export enum OutputType {
 
 const queryOutputs: { [key in QueryType]: OutputType[] } = {
   [QueryType.REAL_TIME_PARKING]: [OutputType.TEXT],
+  [QueryType.AGGREGATED_PARKING_HISTOGRAM]: [
+    OutputType.TEXT,
+    OutputType.BAR_CHART,
+  ],
 };
 
 export function outputTypeName(outputType: OutputType): string {
