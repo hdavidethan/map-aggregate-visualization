@@ -80,6 +80,7 @@ function MapContainer({ markers, halfHourIndex }: Props) {
       >
         {markers?.map((marker) => (
           <MarkerWrapper
+            key={`${marker.lat},${marker.lng}`}
             marker={marker}
             halfHourIndex={halfHourIndex}
             occupied={marker.parking[halfHourIndex] === 0}

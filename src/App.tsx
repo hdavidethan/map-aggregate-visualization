@@ -7,14 +7,46 @@ import { QueryConfiguration } from "./atoms/queryConfigurationAtom";
 import DataBrowsingSection from "./components/DataBrowsingSection";
 import OutputSection from "./components/OutputSection";
 import QuerySection from "./components/QuerySection";
+import QueryType from "./components/QuerySection/QueryType";
 import locations from "./locations.json";
 import { getDistanceFromLatLonInKm } from "./util/distanceUtils";
-import { jsDateToHalfHour } from "./util/halfHourUtils";
+import { halfHourToTimeString, jsDateToHalfHour } from "./util/halfHourUtils";
 
-function App() {
-  const [output, setOutput] = useState("");
+interface Payload {
+  content_type: string;
+  content_value: string | number;
+}
 
-  function calculateOutput(queryConfiguration: QueryConfiguration) {
+function calculateRealTimeParking(
+  queryConfiguration: QueryConfiguration
+): Payload[] {
+  let sum = 0;
+  for (const location of locations) {
+    if (
+      getDistanceFromLatLonInKm(
+        location.lat,
+        location.lng,
+        queryConfiguration.parameters.lat as number,
+        queryConfiguration.parameters.lng as number
+      ) *
+        1000 <
+      queryConfiguration.parameters.radius
+    ) {
+      sum += location.parking[jsDateToHalfHour(new Date())];
+    }
+  }
+  const result = {
+    content_type: "sum",
+    content_value: sum,
+  };
+  return [result];
+}
+
+function calculateAggregatedHistogram(
+  queryConfiguration: QueryConfiguration
+): Payload[] {
+  const result = [];
+  for (let i = 0; i < 47; i++) {
     let sum = 0;
     for (const location of locations) {
       if (
@@ -27,14 +59,30 @@ function App() {
           1000 <
         queryConfiguration.parameters.radius
       ) {
-        sum += location.parking[jsDateToHalfHour(new Date())];
+        sum += location.parking[i];
       }
     }
-    const result = {
-      content_type: "sum",
+    result.push({
+      content_type: "parking_histogram " + halfHourToTimeString(i),
       content_value: sum,
-    };
-    setOutput(JSON.stringify([result], null, 2));
+    });
+  }
+  return result;
+}
+
+function App() {
+  const [output, setOutput] = useState("");
+  function calculateOutput(queryConfiguration: QueryConfiguration) {
+    switch (QueryType[queryConfiguration.queryType]) {
+      case QueryType[QueryType.REAL_TIME_PARKING]:
+        let parking = calculateRealTimeParking(queryConfiguration);
+        setOutput(JSON.stringify(parking, null, 2));
+        break;
+      case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]:
+        let aggregate = calculateAggregatedHistogram(queryConfiguration);
+        setOutput(JSON.stringify(aggregate, null, 2));
+        break;
+    }
   }
 
   return (
