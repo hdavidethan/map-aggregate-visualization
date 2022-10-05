@@ -1,5 +1,4 @@
-import React from "react";
-import { atom, SetterOrUpdater, useRecoilState } from "recoil";
+import { atom, useRecoilState } from "recoil";
 import QueryType from "../components/QuerySection/QueryType";
 
 type ParameterValue = number | string;

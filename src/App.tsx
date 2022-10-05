@@ -1,4 +1,3 @@
-import Editor from "@monaco-editor/react";
 import React, { useState } from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -6,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import { RecoilRoot } from "recoil";
 import { QueryConfiguration } from "./atoms/queryConfigurationAtom";
 import DataBrowsingSection from "./components/DataBrowsingSection";
+import OutputSection from "./components/OutputSection";
 import QuerySection from "./components/QuerySection";
 import locations from "./locations.json";
 import { getDistanceFromLatLonInKm } from "./util/distanceUtils";
@@ -41,20 +41,14 @@ function App() {
     <RecoilRoot>
       <Container fluid>
         <Row className="mt-2">
-          <Col md={3}>
+          <Col md={2}>
             <QuerySection calculateOutput={calculateOutput} />
           </Col>
-          <Col md={6}>
+          <Col md={5}>
             <DataBrowsingSection />
           </Col>
-          <Col md={3}>
-            <h3>Output</h3>
-            <Editor
-              height="80vh"
-              defaultLanguage="json"
-              options={{ readOnly: true }}
-              value={output}
-            />
+          <Col md={5}>
+            <OutputSection output={output} />
           </Col>
         </Row>
       </Container>

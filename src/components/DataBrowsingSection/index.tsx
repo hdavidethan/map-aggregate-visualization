@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Slider from "@mui/material/Slider";
 import MapContainer from "../MapContainer";
-import {
-  halfHourToTimeString,
-  timeRangeToHalfHour,
-} from "../../util/halfHourUtils";
+import { halfHourToTimeString } from "../../util/halfHourUtils";
 
 import locations from "../../locations.json";
 import ScrollControls from "./ScrollControls";
