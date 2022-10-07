@@ -41,11 +41,28 @@ function MapContainer({ markers, halfHourIndex }: Props) {
     },
   };
 
-  if (queryConfiguration.queryType === QueryType.REAL_TIME_PARKING) {
+  const mapLayers: mapboxgl.AnyLayer[] = [
+    {
+      id: "osm",
+      type: "raster",
+      source: "osm",
+    },
+  ];
+
+  if (queryConfiguration.parameters.radius !== undefined) {
     mapSources.circleData = {
       type: "geojson",
       data: circleData,
     };
+    mapLayers.push({
+      id: "circle-fill",
+      type: "fill",
+      source: "circleData",
+      paint: {
+        "fill-color": "yellow",
+        "fill-opacity": 0.3,
+      },
+    });
   }
 
   return (
@@ -60,22 +77,7 @@ function MapContainer({ markers, halfHourIndex }: Props) {
         mapStyle={{
           version: 8,
           sources: mapSources,
-          layers: [
-            {
-              id: "osm",
-              type: "raster",
-              source: "osm", // This must match the source key above
-            },
-            {
-              id: "circle-fill",
-              type: "fill",
-              source: "circleData",
-              paint: {
-                "fill-color": "yellow",
-                "fill-opacity": 0.3,
-              },
-            },
-          ],
+          layers: mapLayers,
         }}
       >
         {markers?.map((marker) => (

@@ -46,7 +46,7 @@ function calculateAggregatedHistogram(
   queryConfiguration: QueryConfiguration
 ): Payload[] {
   const result = [];
-  for (let i = 0; i < 47; i++) {
+  for (let i = 0; i < 48; i++) {
     let sum = 0;
     for (const location of locations) {
       if (
