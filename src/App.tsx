@@ -9,6 +9,7 @@ import OutputSection from "./components/OutputSection";
 import QuerySection from "./components/QuerySection";
 import QueryType from "./components/QuerySection/QueryType";
 import locations from "./locations.json";
+import wordcloud from "./wordcloud.json";
 import { getDistanceFromLatLonInKm } from "./util/distanceUtils";
 import { halfHourToTimeString, jsDateToHalfHour } from "./util/halfHourUtils";
 
@@ -74,14 +75,20 @@ function App() {
   const [output, setOutput] = useState("");
   function calculateOutput(queryConfiguration: QueryConfiguration) {
     switch (QueryType[queryConfiguration.queryType]) {
-      case QueryType[QueryType.REAL_TIME_PARKING]:
+      case QueryType[QueryType.REAL_TIME_PARKING]: {
         let parking = calculateRealTimeParking(queryConfiguration);
         setOutput(JSON.stringify(parking, null, 2));
         break;
-      case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]:
+      }
+      case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
         let aggregate = calculateAggregatedHistogram(queryConfiguration);
         setOutput(JSON.stringify(aggregate, null, 2));
         break;
+      }
+      case QueryType[QueryType.TRENDS]: {
+        setOutput(JSON.stringify(wordcloud, null, 2));
+        break;
+      }
     }
   }
 

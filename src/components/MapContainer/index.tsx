@@ -7,7 +7,6 @@ import MarkerWrapper from "./MarkerWrapper";
 import { ParkingData } from "./ParkingData";
 import * as turf from "@turf/turf";
 import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
-import QueryType from "../QuerySection/QueryType";
 import mapboxgl from "mapbox-gl";
 
 interface Props {

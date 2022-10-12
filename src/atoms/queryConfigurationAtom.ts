@@ -1,7 +1,8 @@
 import { atom, useRecoilState } from "recoil";
 import QueryType from "../components/QuerySection/QueryType";
+import queryInterfaceConfiguration from "./queryInterfaceConfiguration";
 
-type ParameterValue = number | string;
+export type ParameterValue = number | string;
 
 export type QueryConfiguration = {
   queryType: QueryType;
@@ -10,20 +11,28 @@ export type QueryConfiguration = {
   };
 };
 
-export const defaultParameters: {
+type DefaultQueryParameters = {
   [key in QueryType]: { [key: string]: ParameterValue };
-} = {
-  [QueryType.REAL_TIME_PARKING]: {
-    lat: 40.451,
-    lng: -79.935,
-    radius: 300,
-  },
-  [QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
-    lat: 40.451,
-    lng: -79.935,
-    radius: 300,
-  },
 };
+
+export const defaultParameters: DefaultQueryParameters = Object.keys(
+  queryInterfaceConfiguration
+).reduce<DefaultQueryParameters>((acc, key) => {
+  const config =
+    queryInterfaceConfiguration[
+      Number(key) as keyof typeof queryInterfaceConfiguration
+    ];
+
+  const result: { [key: string]: ParameterValue } = {};
+  for (const row of config) {
+    for (const param of row.parameters) {
+      result[param.name] = param.default;
+    }
+  }
+
+  acc[Number(key) as keyof typeof queryInterfaceConfiguration] = result;
+  return acc;
+}, Object.create(QueryType));
 
 const queryConfigurationAtom = atom<QueryConfiguration>({
   key: "QUERY_CONFIGURATION",

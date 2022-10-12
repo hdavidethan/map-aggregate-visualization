@@ -4,6 +4,7 @@ import { BarChart, XAxis, YAxis, Bar } from "recharts";
 import { OutputType } from "./queryOutputs";
 import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
 import QueryType from "../QuerySection/QueryType";
+import WordCloudCanvas from "./WordCloudCanvas";
 
 interface Props {
   output: string;
@@ -18,10 +19,11 @@ function OutputVisualization({ output, outputType }: Props) {
     try {
       const parsedOutput = JSON.parse(output);
       switch (QueryType[queryConfiguration.queryType]) {
-        case QueryType[QueryType.REAL_TIME_PARKING]:
+        case QueryType[QueryType.REAL_TIME_PARKING]: {
           setData([]);
           break;
-        case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]:
+        }
+        case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
           const aggregatedData = [];
           for (const payload of parsedOutput) {
             aggregatedData.push({
@@ -31,13 +33,26 @@ function OutputVisualization({ output, outputType }: Props) {
           }
           setData(aggregatedData);
           break;
+        }
+        case QueryType[QueryType.TRENDS]: {
+          const aggregatedData = [];
+          for (const payload of parsedOutput) {
+            aggregatedData.push([
+              payload.content_type.split(" ")[1],
+              payload.content_value,
+            ]);
+          }
+          setData(aggregatedData);
+          break;
+        }
       }
     } catch {}
   }, [output, queryConfiguration.queryType]);
 
+  let content: React.ReactNode | null = null;
   switch (outputType) {
     case OutputType.TEXT:
-      return (
+      content = (
         <Editor
           height="80vh"
           defaultLanguage="json"
@@ -45,8 +60,9 @@ function OutputVisualization({ output, outputType }: Props) {
           value={output}
         />
       );
+      break;
     case OutputType.BAR_CHART:
-      return (
+      content = (
         <BarChart
           width={700}
           height={350}
@@ -66,7 +82,12 @@ function OutputVisualization({ output, outputType }: Props) {
           <Bar dataKey="p" fill="#8884d8" />
         </BarChart>
       );
+      break;
+    case OutputType.WORD_CLOUD:
+      content = <WordCloudCanvas data={data} />;
+      break;
   }
+  return <div id="output-visualization">{content}</div>;
 }
 
 export default OutputVisualization;

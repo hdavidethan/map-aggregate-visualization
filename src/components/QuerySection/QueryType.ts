@@ -1,6 +1,7 @@
 enum QueryType {
   REAL_TIME_PARKING,
   AGGREGATED_PARKING_HISTOGRAM,
+  TRENDS,
 }
 
 export function queryTypeName(queryType: QueryType) {
@@ -10,6 +11,9 @@ export function queryTypeName(queryType: QueryType) {
 
     case QueryType.AGGREGATED_PARKING_HISTOGRAM:
       return "Aggregated Parking Histogram";
+
+    case QueryType.TRENDS:
+      return "Trends";
   }
 }
 
