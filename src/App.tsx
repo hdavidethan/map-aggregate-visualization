@@ -8,6 +8,7 @@ import DataBrowsingSection from "./components/DataBrowsingSection";
 import OutputSection from "./components/OutputSection";
 import QuerySection from "./components/QuerySection";
 import QueryType from "./components/QuerySection/QueryType";
+import heatmap from "./heatmap.json";
 import locations from "./locations.json";
 import wordcloud from "./wordcloud.json";
 import { getDistanceFromLatLonInKm } from "./util/distanceUtils";
@@ -71,6 +72,23 @@ function calculateAggregatedHistogram(
   return result;
 }
 
+function calculateHeatMap(): Payload[] {
+  const result: Payload[] = [];
+  let i = 0;
+  for (const row of heatmap) {
+    let j = 0;
+    for (const value of row) {
+      result.push({
+        content_type: `noise_map ${i},${j}`,
+        content_value: value,
+      });
+      j++;
+    }
+    i++;
+  }
+  return result;
+}
+
 function App() {
   const [output, setOutput] = useState("");
   function calculateOutput(queryConfiguration: QueryConfiguration) {
@@ -82,6 +100,11 @@ function App() {
       }
       case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
         let aggregate = calculateAggregatedHistogram(queryConfiguration);
+        setOutput(JSON.stringify(aggregate, null, 2));
+        break;
+      }
+      case QueryType[QueryType.NOISE_MAP]: {
+        let aggregate = calculateHeatMap();
         setOutput(JSON.stringify(aggregate, null, 2));
         break;
       }

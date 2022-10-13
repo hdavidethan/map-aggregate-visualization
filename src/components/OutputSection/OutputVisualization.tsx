@@ -5,6 +5,7 @@ import { OutputType } from "./queryOutputs";
 import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
 import QueryType from "../QuerySection/QueryType";
 import WordCloudCanvas from "./WordCloudCanvas";
+import { HeatMap } from "@nivo/heatmap";
 
 interface Props {
   output: string;
@@ -29,6 +30,34 @@ function OutputVisualization({ output, outputType }: Props) {
             aggregatedData.push({
               name: payload.content_type.split(" ")[1],
               p: payload.content_value,
+            });
+          }
+          setData(aggregatedData);
+          break;
+        }
+        case QueryType[QueryType.NOISE_MAP]: {
+          const aggregatedData = [];
+          const rows: { [key: number]: { x: number; y: number }[] } = {};
+          for (const payload of parsedOutput) {
+            const [x, y] = payload.content_type
+              .split(" ")[1]
+              .split(",")
+              .map((v: string) => parseInt(v));
+            const nextValue = {
+              y: payload.content_value,
+              x: y,
+            };
+            if (Array.isArray(rows[x])) {
+              rows[x].push(nextValue);
+            } else {
+              rows[x] = [nextValue];
+            }
+          }
+
+          for (const x in rows) {
+            aggregatedData.push({
+              id: parseInt(x),
+              data: rows[x],
             });
           }
           setData(aggregatedData);
@@ -81,6 +110,24 @@ function OutputVisualization({ output, outputType }: Props) {
           <YAxis />
           <Bar dataKey="p" fill="#8884d8" />
         </BarChart>
+      );
+      break;
+    case OutputType.HEAT_MAP:
+      content = (
+        <HeatMap
+          height={700}
+          width={700}
+          data={data}
+          colors={{
+            type: "sequential",
+            scheme: "oranges",
+            divergeAt: 0.5,
+            minValue: 0,
+            maxValue: 1,
+          }}
+          emptyColor="#555555"
+          valueFormat=">-.3r"
+        />
       );
       break;
     case OutputType.WORD_CLOUD:

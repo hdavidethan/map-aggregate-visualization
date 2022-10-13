@@ -9,30 +9,30 @@ function QueryParameters() {
   return (
     <>
       {queryInterfaceConfiguration[queryConfiguration.queryType].map(
-        (config) => {
+        (config, index) => {
           if (config.parameters.length > 1) {
             return (
-              <>
+              <React.Fragment key={`param-${index}`}>
                 <Form.Label>{config.rowLabel}</Form.Label>
                 <Row>
-                  {config.parameters.map((param) => (
-                    <Col>
+                  {config.parameters.map((param, rowIndex) => (
+                    <Col key={`param-${index}-${rowIndex}`}>
                       <QueryParameter paramConfig={param} />
                     </Col>
                   ))}
                 </Row>
-              </>
+              </React.Fragment>
             );
           } else {
             return (
-              <>
+              <React.Fragment key={`param-${index}`}>
                 <Form.Label>{config.rowLabel}</Form.Label>
-                {config.parameters.map((param) => (
-                  <Col>
+                {config.parameters.map((param, rowIndex) => (
+                  <Col key={`param-${index}-${rowIndex}`}>
                     <QueryParameter paramConfig={param} />
                   </Col>
                 ))}
-              </>
+              </React.Fragment>
             );
           }
         }

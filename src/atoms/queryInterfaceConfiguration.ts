@@ -74,6 +74,7 @@ const queryInterfaceConfiguration: {
       ],
     },
   ],
+  [QueryType.NOISE_MAP]: [],
   [QueryType.TRENDS]: [],
 };
 

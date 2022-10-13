@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
 import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
 import OutputVisualization from "./OutputVisualization";
