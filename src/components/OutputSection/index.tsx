@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
 import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
 import OutputVisualization from "./OutputVisualization";
@@ -16,6 +16,10 @@ function OutputSection({ output }: Props) {
   const [selectedOutputType, setSelectedOutputType] = useState(
     outputTypes?.[0] ?? OutputType.TEXT
   );
+
+  useEffect(() => {
+    setSelectedOutputType(OutputType.TEXT);
+  }, [queryConfiguration.queryType]);
 
   return (
     <>

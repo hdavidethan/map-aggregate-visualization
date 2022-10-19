@@ -42,7 +42,8 @@ const queryConfigurationAtom = atom<QueryConfiguration>({
 export function useQueryConfiguration(): [
   QueryConfiguration,
   (queryType: QueryType) => void,
-  (parameterName: string, value: ParameterValue) => void
+  (parameterName: string, value: ParameterValue) => void,
+  (pairs: [string, ParameterValue][]) => void
 ] {
   const [queryConfiguration, setQueryConfiguration] = useRecoilState(
     queryConfigurationAtom
@@ -65,7 +66,26 @@ export function useQueryConfiguration(): [
     });
   }
 
-  return [queryConfiguration, setQueryType, setQueryParameter];
+  function setQueryParameters(pairs: [string, ParameterValue][]) {
+    let queryConfig = queryConfiguration;
+    for (const [name, value] of pairs) {
+      queryConfig = {
+        ...queryConfig,
+        parameters: {
+          ...queryConfig.parameters,
+          [name]: value,
+        },
+      };
+    }
+    setQueryConfiguration(queryConfig);
+  }
+
+  return [
+    queryConfiguration,
+    setQueryType,
+    setQueryParameter,
+    setQueryParameters,
+  ];
 }
 
 export default queryConfigurationAtom;
