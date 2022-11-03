@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import Editor from "@monaco-editor/react";
 import { BarChart, XAxis, YAxis, Bar } from "recharts";
 import { OutputType } from "./queryOutputs";
-import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
 import QueryType from "../QuerySection/QueryType";
 import WordCloudCanvas from "./WordCloudCanvas";
 import { HeatMap } from "@nivo/heatmap";
+import { useAppSelector } from "../../hooks";
+import {
+  getNextTimeOffset,
+  halfHourToTimeString,
+} from "../../util/halfHourUtils";
 
 interface Props {
   output: string;
@@ -14,7 +18,9 @@ interface Props {
 
 function OutputVisualization({ output, outputType }: Props) {
   const [data, setData] = useState<any[]>([]);
-  const [queryConfiguration] = useQueryConfiguration();
+  const queryConfiguration = useAppSelector(
+    (state) => state.queryConfiguration
+  );
 
   useEffect(() => {
     try {
@@ -26,10 +32,15 @@ function OutputVisualization({ output, outputType }: Props) {
         }
         case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
           const aggregatedData = [];
+          const timeOffset = getNextTimeOffset(new Date());
+          console.log(timeOffset);
           for (const payload of parsedOutput) {
+            const payloadTokens = payload.contentType.split("-");
+            const index = parseInt(payloadTokens[payloadTokens.length - 1]);
+            const timeIndex = halfHourToTimeString((index + timeOffset) % 48);
             aggregatedData.push({
-              name: payload.content_type.split(" ")[1],
-              p: payload.content_value,
+              name: timeIndex,
+              p: payload.contentValue,
             });
           }
           setData(aggregatedData);

@@ -1,5 +1,5 @@
-import QueryType from "../components/QuerySection/QueryType";
-import { ParameterValue } from "./queryConfigurationAtom";
+import QueryType from "../../components/QuerySection/QueryType";
+import { ParameterValue } from "./queryConfigurationSlice";
 
 export interface QueryParameterConfiguration {
   name: string;

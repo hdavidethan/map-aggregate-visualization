@@ -22,3 +22,11 @@ export function timeRangeToHalfHour(timeRange: number): number {
   const n = 24 * 2 - 1;
   return Math.floor((timeRange / 100) * n);
 }
+
+export function getNextTimeOffset(date: Date): number {
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  console.log(hours, minutes);
+  const halfHour = Math.ceil(minutes / 30);
+  return (hours * 2 + halfHour) % 48;
+}

@@ -1,11 +1,13 @@
 import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
-import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
-import queryInterfaceConfiguration from "../../atoms/queryInterfaceConfiguration";
+import queryInterfaceConfiguration from "../../features/queryConfiguration/queryInterfaceConfiguration";
+import { useAppSelector } from "../../hooks";
 import QueryParameter from "./QueryParameter";
 
 function QueryParameters() {
-  const [queryConfiguration] = useQueryConfiguration();
+  const queryConfiguration = useAppSelector(
+    (state) => state.queryConfiguration
+  );
   return (
     <>
       {queryInterfaceConfiguration[queryConfiguration.queryType].map(

@@ -1,35 +1,37 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
-import { QueryParameterConfiguration } from "../../atoms/queryInterfaceConfiguration";
+import { QueryParameterConfiguration } from "../../features/queryConfiguration/queryInterfaceConfiguration";
+import { setParameterValue } from "../../features/queryConfiguration/queryConfigurationSlice";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 
 interface Props {
   paramConfig: QueryParameterConfiguration;
 }
 
 function QueryParameter({ paramConfig }: Props) {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [queryConfiguration, _setQueryType, setQueryParam] =
-    useQueryConfiguration();
+  const queryConfiguration = useAppSelector(
+    (state) => state.queryConfiguration
+  );
+  const dispatch = useAppDispatch();
 
   function handleSetParam(value: string) {
     switch (paramConfig.type) {
       case "float":
         if (value !== "") {
-          setQueryParam(paramConfig.name, parseFloat(value));
+          dispatch(setParameterValue([paramConfig.name, parseFloat(value)]));
         } else {
-          setQueryParam(paramConfig.name, 0);
+          dispatch(setParameterValue([paramConfig.name, 0]));
         }
         break;
       case "int":
         if (value !== "") {
-          setQueryParam(paramConfig.name, parseInt(value));
+          dispatch(setParameterValue([paramConfig.name, parseInt(value)]));
         } else {
-          setQueryParam(paramConfig.name, 0);
+          dispatch(setParameterValue([paramConfig.name, 0]));
         }
         break;
       case "string":
-        setQueryParam(paramConfig.name, value);
+        dispatch(setParameterValue([paramConfig.name, value]));
         break;
     }
   }

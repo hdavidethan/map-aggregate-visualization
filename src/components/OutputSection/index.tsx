@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
-import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
+import { useAppSelector } from "../../hooks";
 import OutputVisualization from "./OutputVisualization";
 import queryOutputs, { OutputType, outputTypeName } from "./queryOutputs";
 
@@ -9,8 +9,9 @@ interface Props {
 }
 
 function OutputSection({ output }: Props) {
-  const [queryConfiguration] = useQueryConfiguration();
-
+  const queryConfiguration = useAppSelector(
+    (state) => state.queryConfiguration
+  );
   const outputTypes = queryOutputs[queryConfiguration.queryType];
 
   const [selectedOutputType, setSelectedOutputType] = useState(

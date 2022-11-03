@@ -6,8 +6,9 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import MarkerWrapper from "./MarkerWrapper";
 import { ParkingData } from "./ParkingData";
 import * as turf from "@turf/turf";
-import { useQueryConfiguration } from "../../atoms/queryConfigurationAtom";
 import mapboxgl from "mapbox-gl";
+import { useAppDispatch, useAppSelector } from "../../hooks";
+import { setParameterValue } from "../../features/queryConfiguration/queryConfigurationSlice";
 
 interface Props {
   markers?: Array<ParkingData>;
@@ -17,8 +18,10 @@ interface Props {
 function MapContainer({ markers, halfHourIndex }: Props) {
   const mapRef = React.useRef<MapRef>(null);
 
-  const [queryConfiguration, _setQueryType, _setQueryParam, setQueryParams] =
-    useQueryConfiguration();
+  const queryConfiguration = useAppSelector(
+    (state) => state.queryConfiguration
+  );
+  const dispatch = useAppDispatch();
   const [lng] = useState(-79.9338);
   const [lat] = useState(40.4511);
   const [zoom] = useState(14);
@@ -75,10 +78,8 @@ function MapContainer({ markers, halfHourIndex }: Props) {
         canvas.style.cursor = "grabbing";
       }
 
-      setQueryParams([
-        ["lat", coords.lat],
-        ["lng", coords.lng],
-      ]);
+      dispatch(setParameterValue(["lat", coords.lat]));
+      dispatch(setParameterValue(["lng", coords.lng]));
     }
 
     function onUp() {
@@ -126,7 +127,7 @@ function MapContainer({ markers, halfHourIndex }: Props) {
       mapRef.current?.on("mousemove", onMove);
       mapRef.current?.once("mouseup", onUp);
     });
-  }, [setQueryParams]);
+  }, [dispatch]);
 
   return (
     <div className="map-wrapper">
