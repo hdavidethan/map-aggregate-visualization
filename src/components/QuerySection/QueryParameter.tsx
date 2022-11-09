@@ -6,9 +6,10 @@ import { useAppDispatch, useAppSelector } from "../../hooks";
 
 interface Props {
   paramConfig: QueryParameterConfiguration;
+  loading: boolean;
 }
 
-function QueryParameter({ paramConfig }: Props) {
+function QueryParameter({ paramConfig, loading }: Props) {
   const queryConfiguration = useAppSelector(
     (state) => state.queryConfiguration
   );
@@ -40,6 +41,7 @@ function QueryParameter({ paramConfig }: Props) {
     return (
       <Form.FloatingLabel label={paramConfig.label} className="mb-3">
         <Form.Control
+          disabled={loading}
           value={queryConfiguration.parameters[paramConfig.name]}
           onChange={(e) => handleSetParam(e.target.value)}
         />
@@ -49,6 +51,7 @@ function QueryParameter({ paramConfig }: Props) {
     return (
       <Form.Control
         className="mb-3"
+        disabled={loading}
         value={queryConfiguration.parameters[paramConfig.name]}
         onChange={(e) => handleSetParam(e.target.value)}
       />

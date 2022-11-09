@@ -4,7 +4,11 @@ import queryInterfaceConfiguration from "../../features/queryConfiguration/query
 import { useAppSelector } from "../../hooks";
 import QueryParameter from "./QueryParameter";
 
-function QueryParameters() {
+interface Props {
+  loading: boolean;
+}
+
+function QueryParameters({ loading }: Props) {
   const queryConfiguration = useAppSelector(
     (state) => state.queryConfiguration
   );
@@ -19,7 +23,7 @@ function QueryParameters() {
                 <Row>
                   {config.parameters.map((param, rowIndex) => (
                     <Col key={`param-${index}-${rowIndex}`}>
-                      <QueryParameter paramConfig={param} />
+                      <QueryParameter loading={loading} paramConfig={param} />
                     </Col>
                   ))}
                 </Row>
@@ -31,7 +35,7 @@ function QueryParameters() {
                 <Form.Label>{config.rowLabel}</Form.Label>
                 {config.parameters.map((param, rowIndex) => (
                   <Col key={`param-${index}-${rowIndex}`}>
-                    <QueryParameter paramConfig={param} />
+                    <QueryParameter loading={loading} paramConfig={param} />
                   </Col>
                 ))}
               </React.Fragment>

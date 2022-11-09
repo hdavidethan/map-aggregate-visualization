@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import QueryType, { queryTypeName } from "./QueryType";
 import QueryParameters from "./QueryParameters";
-import ServiceButton from "./ServiceButton";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import {
   setParameterValue,
@@ -11,12 +10,15 @@ import {
   defaultParameters,
   QueryConfiguration,
 } from "../../features/queryConfiguration/queryConfigurationSlice";
+import ServiceParameters from "./ServiceParameters";
+import { Col, Row, Spinner } from "react-bootstrap";
 
 interface Props {
   calculateOutput: (queryConfiguration: QueryConfiguration) => void;
+  loading: boolean;
 }
 
-function QuerySection({ calculateOutput }: Props) {
+function QuerySection({ calculateOutput, loading }: Props) {
   const queryConfiguration = useAppSelector(
     (state) => state.queryConfiguration
   );
@@ -34,9 +36,9 @@ function QuerySection({ calculateOutput }: Props) {
   return (
     <>
       <h3>Query</h3>
-      <ServiceButton />
       <Form.Label>Select A Query:</Form.Label>
       <Form.Select
+        disabled={loading}
         className="mb-3"
         value={queryConfiguration.queryType}
         onChange={(e) => {
@@ -56,10 +58,25 @@ function QuerySection({ calculateOutput }: Props) {
       </Form.Select>
       <hr />
       <h5>Query Parameters</h5>
-      <QueryParameters />
-      <Button onClick={() => calculateOutput(queryConfiguration)}>
-        Run Query
-      </Button>
+      <QueryParameters loading={loading} />
+      <hr />
+      <h5>Service Parameters</h5>
+      <ServiceParameters loading={loading} />
+      <Row>
+        <Col md="auto">
+          <Button
+            disabled={loading}
+            onClick={() => calculateOutput(queryConfiguration)}
+          >
+            Run Query
+          </Button>
+        </Col>
+        <Col md="auto">
+          {loading && (
+            <Spinner className="mt-1" animation="border" variant="primary" />
+          )}
+        </Col>
+      </Row>
     </>
   );
 }

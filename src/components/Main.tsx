@@ -103,12 +103,16 @@ function getRequestBody(queryConfiguration: QueryConfiguration): string {
 
 function Main() {
   const [output, setOutput] = useState("");
+  const [loading, setLoading] = useState(false);
   const serviceConfiguration = useAppSelector(
     (state) => state.serviceConfiguration
   );
 
   function calculateOutput(queryConfiguration: QueryConfiguration) {
-    if (serviceConfiguration.usingExternalService) {
+    if (
+      serviceConfiguration[queryConfiguration.queryType].usingExternalService
+    ) {
+      setLoading(true);
       fetch(
         "https://19mg8qtqsk.execute-api.us-east-2.amazonaws.com/Prod/execute",
         {
@@ -120,7 +124,9 @@ function Main() {
         .then((res) => res.json())
         .then((json) => {
           setOutput(JSON.stringify(json, null, 2));
-        });
+          setLoading(false);
+        })
+        .catch(() => setLoading(false));
     } else {
       switch (QueryType[queryConfiguration.queryType]) {
         case QueryType[QueryType.REAL_TIME_PARKING]: {
@@ -149,7 +155,7 @@ function Main() {
     <Container fluid>
       <Row className="mt-2">
         <Col md={2}>
-          <QuerySection calculateOutput={calculateOutput} />
+          <QuerySection loading={loading} calculateOutput={calculateOutput} />
         </Col>
         <Col md={5}>
           <DataBrowsingSection />
