@@ -33,7 +33,6 @@ function OutputVisualization({ output, outputType }: Props) {
         case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
           const aggregatedData = [];
           const timeOffset = getNextTimeOffset(new Date());
-          console.log(timeOffset);
           for (const payload of parsedOutput) {
             const payloadTokens = payload.contentType.split("-");
             const index = parseInt(payloadTokens[payloadTokens.length - 1]);
@@ -50,12 +49,12 @@ function OutputVisualization({ output, outputType }: Props) {
           const aggregatedData = [];
           const rows: { [key: number]: { x: number; y: number }[] } = {};
           for (const payload of parsedOutput) {
-            const [x, y] = payload.content_type
+            const [x, y] = payload.contentType
               .split(" ")[1]
               .split(",")
               .map((v: string) => parseInt(v));
             const nextValue = {
-              y: payload.content_value,
+              y: payload.contentValue,
               x: y,
             };
             if (Array.isArray(rows[x])) {
@@ -78,8 +77,8 @@ function OutputVisualization({ output, outputType }: Props) {
           const aggregatedData = [];
           for (const payload of parsedOutput) {
             aggregatedData.push([
-              payload.content_type.split(" ")[1],
-              payload.content_value,
+              payload.contentType.split(" ")[1],
+              payload.contentValue,
             ]);
           }
           setData(aggregatedData);

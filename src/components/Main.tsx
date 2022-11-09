@@ -14,12 +14,12 @@ import heatmap from "../heatmap.json";
 import locations from "../locations.json";
 import wordcloud from "../wordcloud.json";
 import { getDistanceFromLatLonInKm } from "../util/distanceUtils";
-import { halfHourToTimeString, jsDateToHalfHour } from "../util/halfHourUtils";
+import { jsDateToHalfHour } from "../util/halfHourUtils";
 import { useAppSelector } from "../hooks";
 
 interface Payload {
-  content_type: string;
-  content_value: string | number;
+  contentType: string;
+  contentValue: string | number;
 }
 
 function calculateRealTimeParking(
@@ -41,8 +41,8 @@ function calculateRealTimeParking(
     }
   }
   const result = {
-    content_type: "sum",
-    content_value: sum,
+    contentType: "sum",
+    contentValue: sum,
   };
   return [result];
 }
@@ -68,8 +68,8 @@ function calculateAggregatedHistogram(
       }
     }
     result.push({
-      content_type: "parking_histogram " + halfHourToTimeString(i),
-      content_value: sum,
+      contentType: "parking-occupancy-prediction-" + i,
+      contentValue: sum,
     });
   }
   return result;
@@ -82,8 +82,8 @@ function calculateHeatMap(): Payload[] {
     let j = 0;
     for (const value of row) {
       result.push({
-        content_type: `noise_map ${i},${j}`,
-        content_value: value,
+        contentType: `noise_map ${i},${j}`,
+        contentValue: value,
       });
       j++;
     }

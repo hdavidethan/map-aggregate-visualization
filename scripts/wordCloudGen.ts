@@ -1,8 +1,8 @@
 import * as fs from "fs";
 
 interface Payload {
-  content_type: string;
-  content_value: number;
+  contentType: string;
+  contentValue: number;
 }
 
 function generateWordCloud(): Payload[] {
@@ -11,8 +11,8 @@ function generateWordCloud(): Payload[] {
   for (const word of words) {
     const randomNumber = Math.floor(Math.random() * 20);
     result.push({
-      content_type: `trends: ${word}`,
-      content_value: randomNumber,
+      contentType: `trends: ${word}`,
+      contentValue: randomNumber,
     });
   }
   return result;
