@@ -19,7 +19,10 @@ interface Props {
 function MapContainer({ markers, halfHourIndex }: Props) {
   const mapRef = React.useRef<MapRef>(null);
 
-  const { queryConfiguration, lambdaData } = useAppSelector((state) => state);
+  const { queryConfiguration, lambdaData } = useAppSelector((state) => ({
+    queryConfiguration: state.queryConfiguration,
+    lambdaData: state.lambdaData,
+  }));
   const dispatch = useAppDispatch();
 
   const lambdaSet = new Set<string>(

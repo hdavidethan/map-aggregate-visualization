@@ -12,7 +12,10 @@ interface Props {
 
 function ServiceParameters({ loading }: Props) {
   const { serviceConfiguration, queryConfiguration } = useAppSelector(
-    (state) => state
+    (state) => ({
+      serviceConfiguration: state.serviceConfiguration,
+      queryConfiguration: state.queryConfiguration,
+    })
   );
   const dispatch = useAppDispatch();
 
