@@ -14,7 +14,7 @@ function Pin({ size = 20, occupied = false, muted = false }: Props) {
   const pinStyle = {
     cursor: "pointer",
     fill: occupied ? "#d00" : "#1374cf",
-    opacity: muted ? "0.6" : "1.0",
+    opacity: muted ? "0.35" : "1.0",
     stroke: "none",
   };
 
