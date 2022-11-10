@@ -13,58 +13,64 @@ import QueryType from "../components/QuerySection/QueryType";
 import heatmap from "../heatmap.json";
 import locations from "../locations.json";
 import wordcloud from "../wordcloud.json";
-import { getDistanceFromLatLonInKm } from "../util/distanceUtils";
 import { jsDateToHalfHour } from "../util/halfHourUtils";
-import { useAppSelector } from "../hooks";
+import { useAppDispatch, useAppSelector } from "../hooks";
+import { setLambdas } from "../features/lambdaData/lambdaDataSlice";
+import { getPreciseDistance } from "geolib";
+import { Coordinates } from "./MapContainer/Coordinates";
 
 interface Payload {
   contentType: string;
   contentValue: string | number;
 }
 
-function calculateRealTimeParking(
-  queryConfiguration: QueryConfiguration
-): Payload[] {
+function calculateRealTimeParking(queryConfiguration: QueryConfiguration): {
+  result: Payload[];
+  lambdas: Array<Coordinates>;
+} {
   let sum = 0;
+  const lambdas: Array<Coordinates> = [];
   for (const location of locations) {
     if (
-      getDistanceFromLatLonInKm(
-        location.lat,
-        location.lng,
-        queryConfiguration.parameters.lat as number,
-        queryConfiguration.parameters.lng as number
-      ) *
-        1000 <
-      queryConfiguration.parameters.radius
+      getPreciseDistance(
+        { latitude: location.lat, longitude: location.lng },
+        {
+          latitude: queryConfiguration.parameters.lat as number,
+          longitude: queryConfiguration.parameters.lng as number,
+        }
+      ) < queryConfiguration.parameters.radius
     ) {
       sum += location.parking[jsDateToHalfHour(new Date())];
+      lambdas.push({ lat: location.lat, lng: location.lng });
     }
   }
   const result = {
     contentType: "sum",
     contentValue: sum,
   };
-  return [result];
+  return { result: [result], lambdas };
 }
 
-function calculateAggregatedHistogram(
-  queryConfiguration: QueryConfiguration
-): Payload[] {
+function calculateAggregatedHistogram(queryConfiguration: QueryConfiguration): {
+  result: Payload[];
+  lambdas: Array<Coordinates>;
+} {
   const result = [];
+  const lambdas: Array<Coordinates> = [];
   for (let i = 0; i < 48; i++) {
     let sum = 0;
     for (const location of locations) {
       if (
-        getDistanceFromLatLonInKm(
-          location.lat,
-          location.lng,
-          queryConfiguration.parameters.lat as number,
-          queryConfiguration.parameters.lng as number
-        ) *
-          1000 <
-        queryConfiguration.parameters.radius
+        getPreciseDistance(
+          { latitude: location.lat, longitude: location.lng },
+          {
+            latitude: queryConfiguration.parameters.lat as number,
+            longitude: queryConfiguration.parameters.lng as number,
+          }
+        ) < queryConfiguration.parameters.radius
       ) {
         sum += location.parking[i];
+        lambdas.push({ lat: location.lat, lng: location.lng });
       }
     }
     result.push({
@@ -72,7 +78,7 @@ function calculateAggregatedHistogram(
       contentValue: sum,
     });
   }
-  return result;
+  return { result, lambdas };
 }
 
 function calculateHeatMap(): Payload[] {
@@ -107,6 +113,7 @@ function Main() {
   const serviceConfiguration = useAppSelector(
     (state) => state.serviceConfiguration
   );
+  const dispatch = useAppDispatch();
 
   function calculateOutput(queryConfiguration: QueryConfiguration) {
     if (
@@ -123,24 +130,32 @@ function Main() {
       )
         .then((res) => res.json())
         .then((json) => {
-          setOutput(JSON.stringify(json, null, 2));
+          const result = json.result ?? json;
+          setOutput(JSON.stringify(result, null, 2));
+          const lambdas = json.lambdas ?? [];
+          dispatch(setLambdas(lambdas));
           setLoading(false);
         })
         .catch(() => setLoading(false));
     } else {
       switch (QueryType[queryConfiguration.queryType]) {
         case QueryType[QueryType.REAL_TIME_PARKING]: {
-          let parking = calculateRealTimeParking(queryConfiguration);
+          const { result: parking, lambdas } =
+            calculateRealTimeParking(queryConfiguration);
           setOutput(JSON.stringify(parking, null, 2));
+          dispatch(setLambdas(lambdas));
+          console.log(lambdas);
           break;
         }
         case QueryType[QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
-          let aggregate = calculateAggregatedHistogram(queryConfiguration);
+          const { result: aggregate, lambdas } =
+            calculateAggregatedHistogram(queryConfiguration);
           setOutput(JSON.stringify(aggregate, null, 2));
+          dispatch(setLambdas(lambdas));
           break;
         }
         case QueryType[QueryType.NOISE_MAP]: {
-          let aggregate = calculateHeatMap();
+          const aggregate = calculateHeatMap();
           setOutput(JSON.stringify(aggregate, null, 2));
           break;
         }

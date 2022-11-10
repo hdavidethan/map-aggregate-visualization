@@ -1,38 +1,19 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import QueryType from "../../components/QuerySection/QueryType";
+import { serviceConfiguration } from "./serviceConfiguration";
 
 interface ServiceURLConfiguration {
   usingExternalService: boolean;
   serviceUrl: string;
 }
 
-type ServiceConfiguration = {
+export type ServiceConfiguration = {
   [key in QueryType]: ServiceURLConfiguration;
-};
-
-const initialState: ServiceConfiguration = {
-  [QueryType.REAL_TIME_PARKING]: {
-    usingExternalService: false,
-    serviceUrl: "",
-  },
-  [QueryType.AGGREGATED_PARKING_HISTOGRAM]: {
-    usingExternalService: false,
-    serviceUrl:
-      "https://19mg8qtqsk.execute-api.us-east-2.amazonaws.com/Prod/execute",
-  },
-  [QueryType.NOISE_MAP]: {
-    usingExternalService: false,
-    serviceUrl: "",
-  },
-  [QueryType.TRENDS]: {
-    usingExternalService: false,
-    serviceUrl: "",
-  },
 };
 
 export const serviceConfigurationSlice = createSlice({
   name: "serviceConfiguration",
-  initialState,
+  initialState: serviceConfiguration,
   reducers: {
     setUsingExternalService: (
       state,

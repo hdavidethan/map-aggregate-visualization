@@ -9,6 +9,7 @@ import * as turf from "@turf/turf";
 import mapboxgl from "mapbox-gl";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { setParameterValue } from "../../features/queryConfiguration/queryConfigurationSlice";
+import { getMapCenter } from "../../util/mapConfig";
 
 interface Props {
   markers?: Array<ParkingData>;
@@ -18,12 +19,16 @@ interface Props {
 function MapContainer({ markers, halfHourIndex }: Props) {
   const mapRef = React.useRef<MapRef>(null);
 
-  const queryConfiguration = useAppSelector(
-    (state) => state.queryConfiguration
-  );
+  const { queryConfiguration, lambdaData } = useAppSelector((state) => state);
   const dispatch = useAppDispatch();
-  const [lng] = useState(-79.9338);
-  const [lat] = useState(40.4511);
+
+  const lambdaSet = new Set<string>(
+    lambdaData.map((value) => `${value.lat},${value.lng}`)
+  );
+
+  const { lat: centerLat, lng: centerLng } = getMapCenter();
+  const [lng] = useState(centerLng);
+  const [lat] = useState(centerLat);
   const [zoom] = useState(14);
   const [radiusHover, setRadiusHover] = useState(false);
 
@@ -141,14 +146,18 @@ function MapContainer({ markers, halfHourIndex }: Props) {
         ref={mapRef}
         onLoad={onMapLoad}
       >
-        {markers?.map((marker) => (
-          <MarkerWrapper
-            key={`${marker.lat},${marker.lng}`}
-            marker={marker}
-            halfHourIndex={halfHourIndex}
-            occupied={marker.parking[halfHourIndex] === 0}
-          />
-        ))}
+        {markers?.map((marker) => {
+          const lambdaIncluded = lambdaSet.has(`${marker.lat},${marker.lng}`);
+          return (
+            <MarkerWrapper
+              key={`${marker.lat},${marker.lng}`}
+              marker={marker}
+              halfHourIndex={halfHourIndex}
+              occupied={marker.parking[halfHourIndex] === 0}
+              muted={!lambdaIncluded}
+            />
+          );
+        })}
         <Source id="osm" {...osmSource}>
           <Layer {...osmLayer} />
         </Source>

@@ -1,4 +1,5 @@
 import QueryType from "../../components/QuerySection/QueryType";
+import { getMapCenter } from "../../util/mapConfig";
 import { ParameterValue } from "./queryConfigurationSlice";
 
 export interface QueryParameterConfiguration {
@@ -13,6 +14,8 @@ interface QueryInterfaceConfigurationRow {
   parameters: QueryParameterConfiguration[];
 }
 
+const { lat: centerLat, lng: centerLng } = getMapCenter();
+
 const queryInterfaceConfiguration: {
   [key in QueryType]: QueryInterfaceConfigurationRow[];
 } = {
@@ -24,13 +27,13 @@ const queryInterfaceConfiguration: {
           name: "lat",
           label: "Latitude",
           type: "float",
-          default: 40.451,
+          default: centerLat,
         },
         {
           name: "lng",
           label: "Latitude",
           type: "float",
-          default: -79.935,
+          default: centerLng,
         },
       ],
     },
@@ -53,13 +56,13 @@ const queryInterfaceConfiguration: {
           name: "lat",
           label: "Latitude",
           type: "float",
-          default: 40.451,
+          default: centerLat,
         },
         {
           name: "lng",
           label: "Latitude",
           type: "float",
-          default: -79.935,
+          default: centerLng,
         },
       ],
     },

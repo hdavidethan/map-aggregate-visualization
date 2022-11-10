@@ -8,9 +8,10 @@ interface Props {
   marker: ParkingData;
   halfHourIndex: number;
   occupied: boolean;
+  muted: boolean;
 }
 
-function MarkerWrapper({ marker, halfHourIndex, occupied }: Props) {
+function MarkerWrapper({ marker, halfHourIndex, occupied, muted }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -39,7 +40,7 @@ function MarkerWrapper({ marker, halfHourIndex, occupied }: Props) {
         }}
         style={{ cursor: "pointer" }}
       >
-        <Pin occupied={occupied} />
+        <Pin occupied={occupied} muted={muted} />
       </Marker>
     </>
   );
