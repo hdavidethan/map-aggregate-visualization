@@ -22,8 +22,8 @@ function MapContainer({ markers, halfHourIndex }: Props) {
     (state) => state.queryConfiguration
   );
   const dispatch = useAppDispatch();
-  const [lng] = useState(-79.9338);
-  const [lat] = useState(40.4511);
+  const [lng] = useState(-73.996379);
+  const [lat] = useState(40.724539);
   const [zoom] = useState(14);
   const [radiusHover, setRadiusHover] = useState(false);
 

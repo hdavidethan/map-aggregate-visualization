@@ -14,7 +14,7 @@ function convertMetersToDegrees(distance: number): number {
 }
 
 function generateLocation(): IGeolocation {
-  const CENTER = { lat: 40.4511, lng: -79.9338 };
+  const CENTER = { lat: 40.724539, lng: -73.996379 };
   const RADIUS = 1000;
 
   const u = Math.random();

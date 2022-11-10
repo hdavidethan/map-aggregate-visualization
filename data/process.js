@@ -13,7 +13,7 @@ function transformLocationData(location, data) {
     address: { S: JSON.stringify(data.Place) },
     addressLabel: { S: data.Place.Label },
     lat: { N: String(lat) },
-    lng: { N: String(lng) },
+    lon: { N: String(lng) },
     url: {
       S: "https://ioq3wrfdhl.execute-api.us-east-2.amazonaws.com/default",
     },
