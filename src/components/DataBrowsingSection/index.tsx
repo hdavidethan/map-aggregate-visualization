@@ -29,12 +29,11 @@ function DataBrowsingSection() {
         }}
         disableSwap
       />
-      <Form.Label className="mt-3">
+      <Form.Label className="mt-4 mb-0">
         Playback Time: {halfHourToTimeString(timeScroll + timeRange[0])}
       </Form.Label>
       <Slider
         aria-label="Custom marks"
-        disabled
         value={timeScroll}
         min={0}
         max={timeRange[1] - timeRange[0]}
@@ -45,6 +44,9 @@ function DataBrowsingSection() {
             label: halfHourToTimeString(timeRange[1]),
           },
         ]}
+        onChange={(event, value) => {
+          setTimeScroll(value as number);
+        }}
       />
       <ScrollControls
         timeScroll={timeScroll}

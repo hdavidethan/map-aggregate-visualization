@@ -59,25 +59,25 @@ function ScrollControls({
           active={speed === ScrollSpeed.ONE}
           onClick={() => setSpeed(ScrollSpeed.ONE)}
         >
-          1x
+          30 min/s
         </Button>
         <Button
           active={speed === ScrollSpeed.TWO}
           onClick={() => setSpeed(ScrollSpeed.TWO)}
         >
-          2x
+          1 hr/s
         </Button>
         <Button
           active={speed === ScrollSpeed.FIVE}
           onClick={() => setSpeed(ScrollSpeed.FIVE)}
         >
-          5x
+          2.5 hr/s
         </Button>
         <Button
           active={speed === ScrollSpeed.TEN}
           onClick={() => setSpeed(ScrollSpeed.TEN)}
         >
-          10x
+          5 hr/s
         </Button>
       </ButtonGroup>
       <ButtonGroup>
