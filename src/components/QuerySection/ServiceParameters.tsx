@@ -29,8 +29,8 @@ function ServiceParameters({ loading }: Props) {
       <Form.Check
         type="checkbox"
         disabled={loading}
-        label="Enable External Service"
-        checked={usingExternalService}
+        label="Use Mock Data"
+        checked={!usingExternalService}
         onClick={() =>
           dispatch(
             setUsingExternalService([
