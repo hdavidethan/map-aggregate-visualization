@@ -120,19 +120,20 @@ function Main() {
       serviceConfiguration[queryConfiguration.queryType].usingExternalService
     ) {
       setLoading(true);
-      fetch(
-        "https://19mg8qtqsk.execute-api.us-east-2.amazonaws.com/Prod/execute",
-        {
-          // mode: "no-cors",
-          method: "POST",
-          body: getRequestBody(queryConfiguration),
-        }
-      )
+      fetch(serviceConfiguration[queryConfiguration.queryType].serviceUrl, {
+        // mode: "no-cors",
+        method: "POST",
+        body: getRequestBody(queryConfiguration),
+      })
         .then((res) => res.json())
         .then((json) => {
           const result = json.result ?? json;
           setOutput(JSON.stringify(result, null, 2));
-          const lambdas = json.lambdas ?? [];
+          const lambdas =
+            json.lambdas.map(({ lat, lon }: { lat: number; lon: number }) => ({
+              lat,
+              lng: lon,
+            })) ?? [];
           dispatch(setLambdas(lambdas));
           setLoading(false);
         })
