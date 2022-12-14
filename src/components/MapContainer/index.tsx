@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import "maplibre-gl/dist/maplibre-gl.css";
 import MarkerWrapper from "./MarkerWrapper";
-import { ParkingData } from "./ParkingData";
+import { MarkerData } from "./MarkerData";
 import * as turf from "@turf/turf";
 import mapboxgl from "mapbox-gl";
 import { useAppDispatch, useAppSelector } from "../../hooks";
@@ -12,7 +12,7 @@ import { setParameterValue } from "../../features/queryConfiguration/queryConfig
 import { getMapCenter } from "../../util/mapConfig";
 
 interface Props {
-  markers?: Array<ParkingData>;
+  markers?: Array<MarkerData>;
   halfHourIndex: number;
 }
 

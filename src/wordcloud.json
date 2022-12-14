@@ -1,8 +1,62 @@
 [
-  { "contentType": "trends: cool", "contentValue": 13 },
-  { "contentType": "trends: awesome", "contentValue": 17 },
-  { "contentType": "trends: wow", "contentValue": 8 },
-  { "contentType": "trends: fun", "contentValue": 10 },
-  { "contentType": "trends: amazing", "contentValue": 15 },
-  { "contentType": "trends: rad", "contentValue": 7 }
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "peach"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "slug"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "apricot"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "coyote"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "white"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "hummingbird"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "duck"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "salamander"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "blackbird"
+  },
+  {
+    "contentType": "search-query",
+    "contentValue": "1-5",
+    "operationId": "frequency-histogram",
+    "groupId": "Biggs Darklighter"
+  }
 ]

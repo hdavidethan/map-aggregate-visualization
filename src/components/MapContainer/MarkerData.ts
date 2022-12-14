@@ -1,5 +1,5 @@
 import { Coordinates } from "./Coordinates";
 
-export interface ParkingData extends Coordinates {
+export interface MarkerData extends Coordinates {
   parking: Array<number>;
 }

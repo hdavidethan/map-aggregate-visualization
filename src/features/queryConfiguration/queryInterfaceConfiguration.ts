@@ -78,7 +78,35 @@ const queryInterfaceConfiguration: {
     },
   ],
   [QueryType.NOISE_MAP]: [],
-  [QueryType.TRENDS]: [],
+  [QueryType.TRENDS]: [
+    {
+      rowLabel: "Center",
+      parameters: [
+        {
+          name: "lat",
+          label: "Latitude",
+          type: "float",
+          default: centerLat,
+        },
+        {
+          name: "lng",
+          label: "Latitude",
+          type: "float",
+          default: centerLng,
+        },
+      ],
+    },
+    {
+      rowLabel: "Radius (m)",
+      parameters: [
+        {
+          name: "radius",
+          type: "float",
+          default: 300,
+        },
+      ],
+    },
+  ],
 };
 
 export default queryInterfaceConfiguration;

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Marker, Popup } from "react-map-gl";
-import { halfHourToTimeString } from "../../util/halfHourUtils";
-import { ParkingData } from "./ParkingData";
+import MarkerPopupContent from "./MarkerPopupContent";
+import { MarkerData } from "./MarkerData";
 import Pin from "./Pin";
 
 interface Props {
-  marker: ParkingData;
+  marker: MarkerData;
   halfHourIndex: number;
   occupied: boolean;
   muted: boolean;
@@ -22,12 +22,11 @@ function MarkerWrapper({ marker, halfHourIndex, occupied, muted }: Props) {
           anchor="top"
           onClose={() => setIsOpen(false)}
         >
-          <p className="my-0">Latitude: {marker.lat}</p>
-          <p className="my-0">Longitude: {marker.lng}</p>
-          <p className="my-0">Time: {halfHourToTimeString(halfHourIndex)}</p>
-          <p className="my-0">
-            Parking Status: {occupied ? "Occupied" : "Vacant"}
-          </p>
+          <MarkerPopupContent
+            marker={marker}
+            halfHourIndex={halfHourIndex}
+            occupied={occupied}
+          />
         </Popup>
       )}
       <Marker

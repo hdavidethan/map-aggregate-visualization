@@ -18,6 +18,7 @@ export const serviceConfiguration: ServiceConfiguration = {
   },
   [QueryType.TRENDS]: {
     usingExternalService: false,
-    serviceUrl: "",
+    serviceUrl:
+      "https://vmhjupohda.execute-api.us-east-2.amazonaws.com/Prod/execute",
   },
 };

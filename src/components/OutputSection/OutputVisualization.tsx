@@ -76,10 +76,8 @@ function OutputVisualization({ output, outputType }: Props) {
         case QueryType[QueryType.TRENDS]: {
           const aggregatedData = [];
           for (const payload of parsedOutput) {
-            aggregatedData.push([
-              payload.contentType.split(" ")[1],
-              payload.contentValue,
-            ]);
+            const [minValue, maxValue] = payload.contentValue.split("-");
+            aggregatedData.push([payload.groupId, (minValue + maxValue) / 2]);
           }
           setData(aggregatedData);
           break;
