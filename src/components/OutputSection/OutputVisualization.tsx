@@ -49,18 +49,14 @@ function OutputVisualization({ output, outputType }: Props) {
           const aggregatedData = [];
           const rows: { [key: number]: { x: number; y: number }[] } = {};
           for (const payload of parsedOutput) {
-            const [x, y] = payload.contentType
-              .split(" ")[1]
-              .split(",")
-              .map((v: string) => parseInt(v));
             const nextValue = {
               y: payload.contentValue,
-              x: y,
+              x: payload.col,
             };
-            if (Array.isArray(rows[x])) {
-              rows[x].push(nextValue);
+            if (Array.isArray(rows[payload.row])) {
+              rows[payload.row].push(nextValue);
             } else {
-              rows[x] = [nextValue];
+              rows[payload.row] = [nextValue];
             }
           }
 
@@ -76,8 +72,15 @@ function OutputVisualization({ output, outputType }: Props) {
         case QueryType[QueryType.TRENDS]: {
           const aggregatedData = [];
           for (const payload of parsedOutput) {
-            const [minValue, maxValue] = payload.contentValue.split("-");
-            aggregatedData.push([payload.groupId, (minValue + maxValue) / 2]);
+            if (typeof payload.contentValue === "string") {
+              const [minValue, maxValue] = payload.contentValue.split("-");
+              aggregatedData.push([
+                payload.groupId,
+                (parseInt(minValue) + parseInt(maxValue)) / 2,
+              ]);
+            } else {
+              aggregatedData.push([payload.groupId, payload.contentValue]);
+            }
           }
           setData(aggregatedData);
           break;

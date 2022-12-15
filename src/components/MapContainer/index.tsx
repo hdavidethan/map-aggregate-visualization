@@ -156,7 +156,6 @@ function MapContainer({ markers, halfHourIndex }: Props) {
               key={`${marker.lat},${marker.lng}`}
               marker={marker}
               halfHourIndex={halfHourIndex}
-              occupied={marker.parking[halfHourIndex] === 0}
               muted={!lambdaIncluded}
             />
           );

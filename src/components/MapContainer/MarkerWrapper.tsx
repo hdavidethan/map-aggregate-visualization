@@ -7,12 +7,12 @@ import Pin from "./Pin";
 interface Props {
   marker: MarkerData;
   halfHourIndex: number;
-  occupied: boolean;
   muted: boolean;
 }
 
-function MarkerWrapper({ marker, halfHourIndex, occupied, muted }: Props) {
+function MarkerWrapper({ marker, halfHourIndex, muted }: Props) {
   const [isOpen, setIsOpen] = useState(false);
+  const occupied = marker.parking[halfHourIndex] === 0;
   return (
     <>
       {isOpen && (
@@ -21,12 +21,11 @@ function MarkerWrapper({ marker, halfHourIndex, occupied, muted }: Props) {
           latitude={marker.lat}
           anchor="top"
           onClose={() => setIsOpen(false)}
+          maxWidth="500px"
         >
-          <MarkerPopupContent
-            marker={marker}
-            halfHourIndex={halfHourIndex}
-            occupied={occupied}
-          />
+          <div style={{ maxHeight: "250px", overflowY: "scroll" }}>
+            <MarkerPopupContent marker={marker} halfHourIndex={halfHourIndex} />
+          </div>
         </Popup>
       )}
       <Marker

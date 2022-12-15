@@ -12,16 +12,17 @@ import QuerySection from "../components/QuerySection";
 import QueryType from "../components/QuerySection/QueryType";
 import heatmap from "../heatmap.json";
 import locations from "../locations.json";
-import wordcloud from "../wordcloud.json";
 import { jsDateToHalfHour } from "../util/halfHourUtils";
 import { useAppDispatch, useAppSelector } from "../hooks";
 import { setLambdas } from "../features/lambdaData/lambdaDataSlice";
 import { getPreciseDistance } from "geolib";
 import { Coordinates } from "./MapContainer/Coordinates";
+import { getNodesFromParameter } from "../features/queryConfiguration/queryInterfaceConfiguration";
 
 interface Payload {
   contentType: string;
   contentValue: string | number;
+  [key: string]: any;
 }
 
 function calculateRealTimeParking(queryConfiguration: QueryConfiguration): {
@@ -88,8 +89,10 @@ function calculateHeatMap(): Payload[] {
     let j = 0;
     for (const value of row) {
       result.push({
-        contentType: `noise_map ${i},${j}`,
+        contentType: `krigingMap`,
         contentValue: value,
+        row: i,
+        col: j,
       });
       j++;
     }
@@ -98,11 +101,56 @@ function calculateHeatMap(): Payload[] {
   return result;
 }
 
+function calculateTrends(queryConfiguration: QueryConfiguration): {
+  result: Payload[];
+  lambdas: Array<Coordinates>;
+} {
+  const wordMap: { [key: string]: number } = {};
+  const lambdas: Array<Coordinates> = [];
+  for (const location of locations) {
+    if (
+      getPreciseDistance(
+        { latitude: location.lat, longitude: location.lng },
+        {
+          latitude: queryConfiguration.parameters.lat as number,
+          longitude: queryConfiguration.parameters.lng as number,
+        }
+      ) < queryConfiguration.parameters.radius
+    ) {
+      for (const query of location.searchQueries) {
+        if (query.query in wordMap) {
+          wordMap[query.query]++;
+        } else {
+          wordMap[query.query] = 1;
+        }
+        lambdas.push({ lat: location.lat, lng: location.lng });
+      }
+    }
+  }
+  const words = Object.keys(wordMap).sort((a, b) => wordMap[b] - wordMap[a]);
+
+  return {
+    result: words.map((value) => ({
+      contentType: "search-query",
+      contentValue: wordMap[value],
+      operationId: "frequency-count",
+      groupId: value,
+    })),
+    lambdas,
+  };
+}
+
 function getRequestBody(queryConfiguration: QueryConfiguration): string {
   const queryParameters: { [key: string]: ParameterValue } = {};
   for (const parameter in queryConfiguration.parameters) {
-    queryParameters[`PullData.${parameter}`] =
-      queryConfiguration.parameters[parameter];
+    const nodes = getNodesFromParameter(
+      queryConfiguration.queryType,
+      parameter
+    );
+    for (const node of nodes) {
+      queryParameters[`${node}.${parameter}`] =
+        queryConfiguration.parameters[parameter];
+    }
   }
   return JSON.stringify(queryParameters);
 }
@@ -161,7 +209,10 @@ function Main() {
           break;
         }
         case QueryType[QueryType.TRENDS]: {
-          setOutput(JSON.stringify(wordcloud, null, 2));
+          const { result: aggregate, lambdas } =
+            calculateTrends(queryConfiguration);
+          setOutput(JSON.stringify(aggregate, null, 2));
+          dispatch(setLambdas(lambdas));
           break;
         }
       }
