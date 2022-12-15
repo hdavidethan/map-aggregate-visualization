@@ -8,4 +8,5 @@ export interface SearchQuery {
 export interface MarkerData extends Coordinates {
   parking: Array<number>;
   searchQueries: Array<SearchQuery>;
+  noise: number;
 }

@@ -107,7 +107,8 @@
       { "query": "yellow", "timestamp": 3131227740612 },
       { "query": "white", "timestamp": 1937854245343 },
       { "query": "turquoise", "timestamp": 1856044470409 }
-    ]
+    ],
+    "noise": 56
   },
   {
     "lat": 40.72174522386634,
@@ -217,7 +218,8 @@
       { "query": "C-3PO", "timestamp": 2572862538245 },
       { "query": "beige", "timestamp": 1798164049013 },
       { "query": "coral", "timestamp": 3296065587731 }
-    ]
+    ],
+    "noise": 55
   },
   {
     "lat": 40.720975934014184,
@@ -327,7 +329,8 @@
       { "query": "primate", "timestamp": 2450961737005 },
       { "query": "Lando Calrissian", "timestamp": 3043218768049 },
       { "query": "bug", "timestamp": 2532669992579 }
-    ]
+    ],
+    "noise": 76
   },
   {
     "lat": 40.71939626548998,
@@ -437,7 +440,8 @@
       { "query": "Cliegg Lars", "timestamp": 3285331505047 },
       { "query": "magenta", "timestamp": 1804138201987 },
       { "query": "silver", "timestamp": 2323105621454 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.72767919528258,
@@ -547,7 +551,8 @@
       { "query": "chicken", "timestamp": 2102214629577 },
       { "query": "clam", "timestamp": 2792641399908 },
       { "query": "barnacle", "timestamp": 1717178871406 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.726283271605965,
@@ -657,7 +662,8 @@
       { "query": "coffee", "timestamp": 2294074271753 },
       { "query": "yak", "timestamp": 3098376145055 },
       { "query": "orange", "timestamp": 2089586446510 }
-    ]
+    ],
+    "noise": 47
   },
   {
     "lat": 40.721598396911105,
@@ -767,7 +773,8 @@
       { "query": "baboon", "timestamp": 2318497884655 },
       { "query": "yellow", "timestamp": 3314351359257 },
       { "query": "wildfowl", "timestamp": 3037269056388 }
-    ]
+    ],
+    "noise": 78
   },
   {
     "lat": 40.72365299395383,
@@ -877,7 +884,8 @@
       { "query": "silver", "timestamp": 3116892379239 },
       { "query": "crocodile", "timestamp": 2157514545058 },
       { "query": "Watto", "timestamp": 1815837222466 }
-    ]
+    ],
+    "noise": 77
   },
   {
     "lat": 40.71745848843918,
@@ -987,7 +995,8 @@
       { "query": "moccasin", "timestamp": 1806167204964 },
       { "query": "salmon", "timestamp": 3008615702888 },
       { "query": "tarsier", "timestamp": 1773362618750 }
-    ]
+    ],
+    "noise": 47
   },
   {
     "lat": 40.72978710778243,
@@ -1097,7 +1106,8 @@
       { "query": "ivory", "timestamp": 3269500128319 },
       { "query": "Nute Gunray", "timestamp": 3020477806817 },
       { "query": "gray", "timestamp": 2890075826892 }
-    ]
+    ],
+    "noise": 62
   },
   {
     "lat": 40.72282834170115,
@@ -1207,7 +1217,8 @@
       { "query": "vole", "timestamp": 2561979792078 },
       { "query": "lime", "timestamp": 1925493500087 },
       { "query": "Shmi Skywalker", "timestamp": 2659752511789 }
-    ]
+    ],
+    "noise": 22
   },
   {
     "lat": 40.72552627427399,
@@ -1317,7 +1328,8 @@
       { "query": "gray", "timestamp": 2737352954060 },
       { "query": "Jocasta Nu", "timestamp": 1745684802696 },
       { "query": "apricot", "timestamp": 1953112434390 }
-    ]
+    ],
+    "noise": 21
   },
   {
     "lat": 40.72645763334378,
@@ -1427,7 +1439,8 @@
       { "query": "copper", "timestamp": 2749627422621 },
       { "query": "tomato", "timestamp": 2039088856667 },
       { "query": "goat", "timestamp": 3241742745457 }
-    ]
+    ],
+    "noise": 35
   },
   {
     "lat": 40.71822758589196,
@@ -1537,7 +1550,8 @@
       { "query": "Jar Jar Binks", "timestamp": 2320955199021 },
       { "query": "badger", "timestamp": 2073383049298 },
       { "query": "cyan", "timestamp": 2947155947399 }
-    ]
+    ],
+    "noise": 55
   },
   {
     "lat": 40.725757301028054,
@@ -1647,7 +1661,8 @@
       { "query": "Mace Windu", "timestamp": 3005276920771 },
       { "query": "Barriss Offee", "timestamp": 1870484163860 },
       { "query": "R2-D2", "timestamp": 2528313808950 }
-    ]
+    ],
+    "noise": 30
   },
   {
     "lat": 40.72409860307388,
@@ -1757,7 +1772,8 @@
       { "query": "takin", "timestamp": 2252480975487 },
       { "query": "beige", "timestamp": 3233828872145 },
       { "query": "Dud Bolt", "timestamp": 2960404236213 }
-    ]
+    ],
+    "noise": 51
   },
   {
     "lat": 40.72658398165521,
@@ -1867,7 +1883,8 @@
       { "query": "panda", "timestamp": 2321793052643 },
       { "query": "Yarael Poof", "timestamp": 2551878898678 },
       { "query": "puma", "timestamp": 1848793764692 }
-    ]
+    ],
+    "noise": 76
   },
   {
     "lat": 40.729797056082994,
@@ -1977,7 +1994,8 @@
       { "query": "worm", "timestamp": 2112482189401 },
       { "query": "Ayla Secura", "timestamp": 2022550296719 },
       { "query": "locust", "timestamp": 3243759539732 }
-    ]
+    ],
+    "noise": 77
   },
   {
     "lat": 40.72815707503304,
@@ -2087,7 +2105,8 @@
       { "query": "Sebulba", "timestamp": 3036048266776 },
       { "query": "pelican", "timestamp": 2844475797117 },
       { "query": "Lobot", "timestamp": 2802059417595 }
-    ]
+    ],
+    "noise": 44
   },
   {
     "lat": 40.72068758366428,
@@ -2197,7 +2216,8 @@
       { "query": "Dormé", "timestamp": 1917615664193 },
       { "query": "cicada", "timestamp": 2477966890659 },
       { "query": "olive", "timestamp": 2905043985597 }
-    ]
+    ],
+    "noise": 55
   },
   {
     "lat": 40.718074301286734,
@@ -2307,7 +2327,8 @@
       { "query": "jade", "timestamp": 1790764258403 },
       { "query": "yellow", "timestamp": 1745489340010 },
       { "query": "skink", "timestamp": 1911551533739 }
-    ]
+    ],
+    "noise": 61
   },
   {
     "lat": 40.729190343358695,
@@ -2417,7 +2438,8 @@
       { "query": "rose", "timestamp": 2680414085641 },
       { "query": "Cordé", "timestamp": 2222552225224 },
       { "query": "aquamarine", "timestamp": 2224889844816 }
-    ]
+    ],
+    "noise": 36
   },
   {
     "lat": 40.726944783427015,
@@ -2527,7 +2549,8 @@
       { "query": "antelope", "timestamp": 3102792615556 },
       { "query": "orange", "timestamp": 2678874855952 },
       { "query": "Sebulba", "timestamp": 1895108197097 }
-    ]
+    ],
+    "noise": 75
   },
   {
     "lat": 40.72786096667362,
@@ -2637,7 +2660,8 @@
       { "query": "Leia Organa", "timestamp": 2301662813451 },
       { "query": "orange", "timestamp": 2669844804622 },
       { "query": "Bail Prestor Organa", "timestamp": 2244191767762 }
-    ]
+    ],
+    "noise": 48
   },
   {
     "lat": 40.72441408433001,
@@ -2747,7 +2771,8 @@
       { "query": "clam", "timestamp": 1746350165997 },
       { "query": "R5-D4", "timestamp": 2856750832088 },
       { "query": "lavender", "timestamp": 2221057842091 }
-    ]
+    ],
+    "noise": 28
   },
   {
     "lat": 40.72825741117714,
@@ -2857,7 +2882,8 @@
       { "query": "Jek Tono Porkins", "timestamp": 3169781338352 },
       { "query": "Darth Maul", "timestamp": 1751140050515 },
       { "query": "Bib Fortuna", "timestamp": 1790329905835 }
-    ]
+    ],
+    "noise": 20
   },
   {
     "lat": 40.71832265049635,
@@ -2967,7 +2993,8 @@
       { "query": "Ben Quadinaros", "timestamp": 2100990453813 },
       { "query": "salmon", "timestamp": 2731144382763 },
       { "query": "aquamarine", "timestamp": 1893688345423 }
-    ]
+    ],
+    "noise": 67
   },
   {
     "lat": 40.717834841817044,
@@ -3077,7 +3104,8 @@
       { "query": "Ric Olié", "timestamp": 2295610321126 },
       { "query": "badger", "timestamp": 2740301475570 },
       { "query": "silver", "timestamp": 1678945680415 }
-    ]
+    ],
+    "noise": 59
   },
   {
     "lat": 40.727455420017826,
@@ -3187,7 +3215,8 @@
       { "query": "amber", "timestamp": 3281710425250 },
       { "query": "white", "timestamp": 3066418491473 },
       { "query": "guppy", "timestamp": 2158858655607 }
-    ]
+    ],
+    "noise": 20
   },
   {
     "lat": 40.729637557672625,
@@ -3297,7 +3326,8 @@
       { "query": "lungfish", "timestamp": 3197054571611 },
       { "query": "stingray", "timestamp": 2517087266323 },
       { "query": "maroon", "timestamp": 2711491226802 }
-    ]
+    ],
+    "noise": 23
   },
   {
     "lat": 40.720675598764146,
@@ -3407,7 +3437,8 @@
       { "query": "whale", "timestamp": 2015249049089 },
       { "query": "trout", "timestamp": 3009940378824 },
       { "query": "ivory", "timestamp": 2320604185583 }
-    ]
+    ],
+    "noise": 67
   },
   {
     "lat": 40.7183909308716,
@@ -3517,7 +3548,8 @@
       { "query": "emu", "timestamp": 3081258452580 },
       { "query": "tomato", "timestamp": 3181718225181 },
       { "query": "crimson", "timestamp": 2925555106142 }
-    ]
+    ],
+    "noise": 42
   },
   {
     "lat": 40.723735980188124,
@@ -3627,7 +3659,8 @@
       { "query": "apricot", "timestamp": 2435044075740 },
       { "query": "felidae", "timestamp": 3040898593619 },
       { "query": "Jar Jar Binks", "timestamp": 2005990471920 }
-    ]
+    ],
+    "noise": 34
   },
   {
     "lat": 40.729930629030335,
@@ -3737,7 +3770,8 @@
       { "query": "seahorse", "timestamp": 2032356650885 },
       { "query": "aquamarine", "timestamp": 3055826105354 },
       { "query": "eagle", "timestamp": 1938329234013 }
-    ]
+    ],
+    "noise": 78
   },
   {
     "lat": 40.729947180884395,
@@ -3847,7 +3881,8 @@
       { "query": "Poggle the Lesser", "timestamp": 2222091512382 },
       { "query": "coffee", "timestamp": 2698836882072 },
       { "query": "Bossk", "timestamp": 1835406150353 }
-    ]
+    ],
+    "noise": 32
   },
   {
     "lat": 40.72698331267425,
@@ -3957,7 +3992,8 @@
       { "query": "Palpatine", "timestamp": 2590641195697 },
       { "query": "aardwolf", "timestamp": 1992553203681 },
       { "query": "Bossk", "timestamp": 2503543122862 }
-    ]
+    ],
+    "noise": 41
   },
   {
     "lat": 40.72603744514773,
@@ -4067,7 +4103,8 @@
       { "query": "maroon", "timestamp": 2710994774557 },
       { "query": "apricot", "timestamp": 2396956460281 },
       { "query": "Adi Gallia", "timestamp": 2058418677097 }
-    ]
+    ],
+    "noise": 50
   },
   {
     "lat": 40.717132811033515,
@@ -4177,7 +4214,8 @@
       { "query": "coyote", "timestamp": 2011138456623 },
       { "query": "copper", "timestamp": 2340768347097 },
       { "query": "green", "timestamp": 2059183035078 }
-    ]
+    ],
+    "noise": 36
   },
   {
     "lat": 40.72589581468339,
@@ -4287,7 +4325,8 @@
       { "query": "yellow", "timestamp": 3220063020141 },
       { "query": "Darth Maul", "timestamp": 3325799486785 },
       { "query": "Raymus Antilles", "timestamp": 2239894885311 }
-    ]
+    ],
+    "noise": 77
   },
   {
     "lat": 40.73132463071766,
@@ -4397,7 +4436,8 @@
       { "query": "yellow", "timestamp": 1830473956796 },
       { "query": "Poggle the Lesser", "timestamp": 1924970098289 },
       { "query": "jackal", "timestamp": 2586613357780 }
-    ]
+    ],
+    "noise": 40
   },
   {
     "lat": 40.725828780430035,
@@ -4507,7 +4547,8 @@
       { "query": "bison", "timestamp": 1964892852182 },
       { "query": "peach", "timestamp": 1821612689732 },
       { "query": "Raymus Antilles", "timestamp": 2905897825777 }
-    ]
+    ],
+    "noise": 76
   },
   {
     "lat": 40.72124914737974,
@@ -4617,7 +4658,8 @@
       { "query": "emerald", "timestamp": 2939600784305 },
       { "query": "gray", "timestamp": 1693961270460 },
       { "query": "emu", "timestamp": 2199786203657 }
-    ]
+    ],
+    "noise": 67
   },
   {
     "lat": 40.728740584827165,
@@ -4727,7 +4769,8 @@
       { "query": "amethyst", "timestamp": 2996716123161 },
       { "query": "beige", "timestamp": 3061177006099 },
       { "query": "coral", "timestamp": 1984548348717 }
-    ]
+    ],
+    "noise": 29
   },
   {
     "lat": 40.72158777643871,
@@ -4837,7 +4880,8 @@
       { "query": "black", "timestamp": 2266933231289 },
       { "query": "emerald", "timestamp": 3298184568156 },
       { "query": "pink", "timestamp": 3141486451072 }
-    ]
+    ],
+    "noise": 71
   },
   {
     "lat": 40.728066954855656,
@@ -4947,7 +4991,8 @@
       { "query": "tan", "timestamp": 2513661727257 },
       { "query": "blush", "timestamp": 1886046022523 },
       { "query": "aqua", "timestamp": 2096990820337 }
-    ]
+    ],
+    "noise": 34
   },
   {
     "lat": 40.73047765783463,
@@ -5057,7 +5102,8 @@
       { "query": "teal", "timestamp": 2228113703678 },
       { "query": "scarlet", "timestamp": 2679801384429 },
       { "query": "bobolink", "timestamp": 2456750469338 }
-    ]
+    ],
+    "noise": 31
   },
   {
     "lat": 40.73251911955895,
@@ -5167,7 +5213,8 @@
       { "query": "silver", "timestamp": 2842876379573 },
       { "query": "Raymus Antilles", "timestamp": 2792113906051 },
       { "query": "whale", "timestamp": 3009258069238 }
-    ]
+    ],
+    "noise": 71
   },
   {
     "lat": 40.72685552049006,
@@ -5277,7 +5324,8 @@
       { "query": "brown", "timestamp": 2537226780939 },
       { "query": "IG-88", "timestamp": 2605790157477 },
       { "query": "Kit Fisto", "timestamp": 3186034219113 }
-    ]
+    ],
+    "noise": 30
   },
   {
     "lat": 40.7270389211371,
@@ -5387,7 +5435,8 @@
       { "query": "azure", "timestamp": 3230292670590 },
       { "query": "aquamarine", "timestamp": 2698040856644 },
       { "query": "Bail Prestor Organa", "timestamp": 2188616039967 }
-    ]
+    ],
+    "noise": 22
   },
   {
     "lat": 40.726853273131496,
@@ -5497,7 +5546,8 @@
       { "query": "elephant", "timestamp": 2049962477573 },
       { "query": "amber", "timestamp": 2216974645712 },
       { "query": "gopher", "timestamp": 3322263472817 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.72897234718668,
@@ -5607,7 +5657,8 @@
       { "query": "turquoise", "timestamp": 2451686669141 },
       { "query": "maroon", "timestamp": 3269438163875 },
       { "query": "beaver", "timestamp": 3012814176302 }
-    ]
+    ],
+    "noise": 23
   },
   {
     "lat": 40.72184809840414,
@@ -5717,7 +5768,8 @@
       { "query": "lemming", "timestamp": 2872342832585 },
       { "query": "aquamarine", "timestamp": 1808663735755 },
       { "query": "Yoda", "timestamp": 2689559392626 }
-    ]
+    ],
+    "noise": 34
   },
   {
     "lat": 40.72983210263203,
@@ -5827,7 +5879,8 @@
       { "query": "silver", "timestamp": 2474191734828 },
       { "query": "pink", "timestamp": 2523851342633 },
       { "query": "Finis Valorum", "timestamp": 2968664437075 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.72768788448983,
@@ -5937,7 +5990,8 @@
       { "query": "Jocasta Nu", "timestamp": 1793975680168 },
       { "query": "white", "timestamp": 2645013186826 },
       { "query": "maroon", "timestamp": 1943922908037 }
-    ]
+    ],
+    "noise": 67
   },
   {
     "lat": 40.721980226562415,
@@ -6047,7 +6101,8 @@
       { "query": "copper", "timestamp": 2842697730164 },
       { "query": "duck", "timestamp": 2120418231209 },
       { "query": "moccasin", "timestamp": 1990620908292 }
-    ]
+    ],
+    "noise": 42
   },
   {
     "lat": 40.72430632723582,
@@ -6157,7 +6212,8 @@
       { "query": "white", "timestamp": 2739469080151 },
       { "query": "ape", "timestamp": 3032917022538 },
       { "query": "bear", "timestamp": 2278276569372 }
-    ]
+    ],
+    "noise": 75
   },
   {
     "lat": 40.717996040704755,
@@ -6267,7 +6323,8 @@
       { "query": "Biggs Darklighter", "timestamp": 2144133815995 },
       { "query": "aquamarine", "timestamp": 1816776807553 },
       { "query": "hawk", "timestamp": 2689907223539 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.73270090193275,
@@ -6377,7 +6434,8 @@
       { "query": "pheasant", "timestamp": 2397714643868 },
       { "query": "vole", "timestamp": 3339026993355 },
       { "query": "Jango Fett", "timestamp": 2226264572701 }
-    ]
+    ],
+    "noise": 51
   },
   {
     "lat": 40.72697024184477,
@@ -6487,7 +6545,8 @@
       { "query": "chipmunk", "timestamp": 2733181685145 },
       { "query": "Greedo", "timestamp": 2121877091752 },
       { "query": "teal", "timestamp": 2179324006360 }
-    ]
+    ],
+    "noise": 49
   },
   {
     "lat": 40.72230391811479,
@@ -6597,7 +6656,8 @@
       { "query": "IG-88", "timestamp": 1925598375642 },
       { "query": "Biggs Darklighter", "timestamp": 2613194409869 },
       { "query": "python", "timestamp": 2314674257047 }
-    ]
+    ],
+    "noise": 67
   },
   {
     "lat": 40.72117878432256,
@@ -6707,7 +6767,8 @@
       { "query": "lion", "timestamp": 3284001388387 },
       { "query": "marmot", "timestamp": 2874468531256 },
       { "query": "beige", "timestamp": 2104919343282 }
-    ]
+    ],
+    "noise": 25
   },
   {
     "lat": 40.71872515235284,
@@ -6817,7 +6878,8 @@
       { "query": "jade", "timestamp": 2092416743257 },
       { "query": "tomato", "timestamp": 3271757972399 },
       { "query": "Zam Wesell", "timestamp": 1751849011312 }
-    ]
+    ],
+    "noise": 54
   },
   {
     "lat": 40.721659279215594,
@@ -6927,7 +6989,8 @@
       { "query": "Bossk", "timestamp": 2277928484957 },
       { "query": "IG-88", "timestamp": 2337538925422 },
       { "query": "emerald", "timestamp": 2636830855869 }
-    ]
+    ],
+    "noise": 67
   },
   {
     "lat": 40.73217257588506,
@@ -7037,7 +7100,8 @@
       { "query": "blue", "timestamp": 2495471264076 },
       { "query": "moccasin", "timestamp": 2520185247218 },
       { "query": "mandrill", "timestamp": 2175021068072 }
-    ]
+    ],
+    "noise": 50
   },
   {
     "lat": 40.724106375182075,
@@ -7147,7 +7211,8 @@
       { "query": "black", "timestamp": 2279233367815 },
       { "query": "Owen Lars", "timestamp": 3227880577357 },
       { "query": "magenta", "timestamp": 2603719177236 }
-    ]
+    ],
+    "noise": 44
   },
   {
     "lat": 40.7263605673416,
@@ -7257,7 +7322,8 @@
       { "query": "C-3PO", "timestamp": 1936516291513 },
       { "query": "booby", "timestamp": 1820458201693 },
       { "query": "viper", "timestamp": 3018128149734 }
-    ]
+    ],
+    "noise": 60
   },
   {
     "lat": 40.72268566226542,
@@ -7367,7 +7433,8 @@
       { "query": "peach", "timestamp": 3297866087621 },
       { "query": "black", "timestamp": 3326163391873 },
       { "query": "nightingale", "timestamp": 1959466365818 }
-    ]
+    ],
+    "noise": 54
   },
   {
     "lat": 40.723509978002205,
@@ -7477,7 +7544,8 @@
       { "query": "Darth Vader", "timestamp": 2048382258024 },
       { "query": "salmon", "timestamp": 3248658859249 },
       { "query": "peacock", "timestamp": 2096411305939 }
-    ]
+    ],
+    "noise": 75
   },
   {
     "lat": 40.728100833342545,
@@ -7587,7 +7655,8 @@
       { "query": "booby", "timestamp": 2912894362053 },
       { "query": "yellow", "timestamp": 2284370143249 },
       { "query": "turtle", "timestamp": 1824672844056 }
-    ]
+    ],
+    "noise": 78
   },
   {
     "lat": 40.71996910123659,
@@ -7697,7 +7766,8 @@
       { "query": "Darth Maul", "timestamp": 2250181268702 },
       { "query": "purple", "timestamp": 2588666855277 },
       { "query": "yellow", "timestamp": 2766905579598 }
-    ]
+    ],
+    "noise": 39
   },
   {
     "lat": 40.72345760717769,
@@ -7807,7 +7877,8 @@
       { "query": "Cliegg Lars", "timestamp": 1944665638304 },
       { "query": "sturgeon", "timestamp": 3060180466509 },
       { "query": "Nien Nunb", "timestamp": 2264586920050 }
-    ]
+    ],
+    "noise": 54
   },
   {
     "lat": 40.72661340720665,
@@ -7917,7 +7988,8 @@
       { "query": "damselfly", "timestamp": 2505266524981 },
       { "query": "violet", "timestamp": 2873169187824 },
       { "query": "monkey", "timestamp": 1952209937951 }
-    ]
+    ],
+    "noise": 33
   },
   {
     "lat": 40.72881252775347,
@@ -8027,7 +8099,8 @@
       { "query": "Han Solo", "timestamp": 2214389615843 },
       { "query": "ivory", "timestamp": 1900209054497 },
       { "query": "bobcat", "timestamp": 3336261395212 }
-    ]
+    ],
+    "noise": 57
   },
   {
     "lat": 40.731166393495926,
@@ -8137,7 +8210,8 @@
       { "query": "Ric Olié", "timestamp": 2936553706686 },
       { "query": "hamster", "timestamp": 2886073247696 },
       { "query": "bass", "timestamp": 3025624496200 }
-    ]
+    ],
+    "noise": 46
   },
   {
     "lat": 40.73170862785488,
@@ -8247,7 +8321,8 @@
       { "query": "indigo", "timestamp": 3260675979566 },
       { "query": "sapphire", "timestamp": 2007970303254 },
       { "query": "plum", "timestamp": 2169456268230 }
-    ]
+    ],
+    "noise": 60
   },
   {
     "lat": 40.72659824714863,
@@ -8357,7 +8432,8 @@
       { "query": "llama", "timestamp": 1881796332687 },
       { "query": "amaranth", "timestamp": 2558438980021 },
       { "query": "galliform", "timestamp": 1719876786635 }
-    ]
+    ],
+    "noise": 47
   },
   {
     "lat": 40.723374056554164,
@@ -8467,7 +8543,8 @@
       { "query": "camel", "timestamp": 2722385657046 },
       { "query": "Dooku", "timestamp": 3250215381803 },
       { "query": "Ratts Tyerel", "timestamp": 3127754144634 }
-    ]
+    ],
+    "noise": 34
   },
   {
     "lat": 40.729386774677195,
@@ -8577,7 +8654,8 @@
       { "query": "mackerel", "timestamp": 3268736438653 },
       { "query": "Obi-Wan Kenobi", "timestamp": 2520602985390 },
       { "query": "armadillo", "timestamp": 1742540582420 }
-    ]
+    ],
+    "noise": 50
   },
   {
     "lat": 40.729376618575316,
@@ -8687,7 +8765,8 @@
       { "query": "Taun We", "timestamp": 2513755440662 },
       { "query": "black", "timestamp": 1783146992125 },
       { "query": "rook", "timestamp": 2260688010531 }
-    ]
+    ],
+    "noise": 61
   },
   {
     "lat": 40.72964635619794,
@@ -8797,7 +8876,8 @@
       { "query": "Gregar Typho", "timestamp": 2357423252753 },
       { "query": "Luke Skywalker", "timestamp": 1903659665545 },
       { "query": "Wicket Systri Warrick", "timestamp": 2318324292449 }
-    ]
+    ],
+    "noise": 71
   },
   {
     "lat": 40.72017043609274,
@@ -8907,7 +8987,8 @@
       { "query": "Jek Tono Porkins", "timestamp": 2657647140341 },
       { "query": "viper", "timestamp": 2427788089591 },
       { "query": "aqua", "timestamp": 2694642840472 }
-    ]
+    ],
+    "noise": 33
   },
   {
     "lat": 40.719245290896616,
@@ -9017,7 +9098,8 @@
       { "query": "crimson", "timestamp": 2935787803422 },
       { "query": "Dormé", "timestamp": 1752824507977 },
       { "query": "sapphire", "timestamp": 2332761458423 }
-    ]
+    ],
+    "noise": 76
   },
   {
     "lat": 40.72232510644351,
@@ -9127,7 +9209,8 @@
       { "query": "jade", "timestamp": 2244311454277 },
       { "query": "Arvel Crynyd", "timestamp": 2813037426688 },
       { "query": "teal", "timestamp": 2733001981039 }
-    ]
+    ],
+    "noise": 66
   },
   {
     "lat": 40.71758484596292,
@@ -9237,7 +9320,8 @@
       { "query": "rat", "timestamp": 3107841864452 },
       { "query": "crane", "timestamp": 3261961511183 },
       { "query": "goldfish", "timestamp": 2369892447489 }
-    ]
+    ],
+    "noise": 57
   },
   {
     "lat": 40.71917149045096,
@@ -9347,7 +9431,8 @@
       { "query": "woodpecker", "timestamp": 1763353842536 },
       { "query": "pink", "timestamp": 1952731560451 },
       { "query": "emu", "timestamp": 1736701951982 }
-    ]
+    ],
+    "noise": 38
   },
   {
     "lat": 40.72290551339101,
@@ -9457,7 +9542,8 @@
       { "query": "pink", "timestamp": 2015363459785 },
       { "query": "Darth Maul", "timestamp": 1883006689846 },
       { "query": "anteater", "timestamp": 2446492285335 }
-    ]
+    ],
+    "noise": 23
   },
   {
     "lat": 40.72639449930221,
@@ -9567,7 +9653,8 @@
       { "query": "wildcat", "timestamp": 2677209835305 },
       { "query": "mosquito", "timestamp": 3191129762640 },
       { "query": "apricot", "timestamp": 2679614778184 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.73158670356181,
@@ -9677,7 +9764,8 @@
       { "query": "maroon", "timestamp": 2823467310134 },
       { "query": "Leia Organa", "timestamp": 2753517414278 },
       { "query": "perch", "timestamp": 2039607651613 }
-    ]
+    ],
+    "noise": 48
   },
   {
     "lat": 40.729949558808805,
@@ -9787,7 +9875,8 @@
       { "query": "emu", "timestamp": 1739157771515 },
       { "query": "Mon Mothma", "timestamp": 2782516646266 },
       { "query": "Darth Maul", "timestamp": 2006181413547 }
-    ]
+    ],
+    "noise": 71
   },
   {
     "lat": 40.71828688416745,
@@ -9897,7 +9986,8 @@
       { "query": "pink", "timestamp": 1884803450759 },
       { "query": "apricot", "timestamp": 2289100337209 },
       { "query": "lark", "timestamp": 2786871840073 }
-    ]
+    ],
+    "noise": 24
   },
   {
     "lat": 40.7270423435508,
@@ -10007,7 +10097,8 @@
       { "query": "Chewbacca", "timestamp": 2953866717328 },
       { "query": "prawn", "timestamp": 3132684061110 },
       { "query": "mite", "timestamp": 2943777562617 }
-    ]
+    ],
+    "noise": 31
   },
   {
     "lat": 40.731748961253835,
@@ -10117,7 +10208,8 @@
       { "query": "indigo", "timestamp": 2522424514017 },
       { "query": "sparrow", "timestamp": 2800077453628 },
       { "query": "Tion Medon", "timestamp": 1705521147603 }
-    ]
+    ],
+    "noise": 74
   },
   {
     "lat": 40.73096117357881,
@@ -10227,7 +10319,8 @@
       { "query": "Cliegg Lars", "timestamp": 2587245329113 },
       { "query": "scarlet", "timestamp": 2486745067223 },
       { "query": "Dormé", "timestamp": 3296600103354 }
-    ]
+    ],
+    "noise": 72
   },
   {
     "lat": 40.72728185917838,
@@ -10337,7 +10430,8 @@
       { "query": "boar", "timestamp": 1899069679678 },
       { "query": "rabbit", "timestamp": 2632027488598 },
       { "query": "dragonfly", "timestamp": 1706868332631 }
-    ]
+    ],
+    "noise": 34
   },
   {
     "lat": 40.7251255810641,
@@ -10447,7 +10541,8 @@
       { "query": "cyan", "timestamp": 1763342575601 },
       { "query": "yellow", "timestamp": 2328742838254 },
       { "query": "indigo", "timestamp": 2609713653846 }
-    ]
+    ],
+    "noise": 68
   },
   {
     "lat": 40.7250340769494,
@@ -10557,7 +10652,8 @@
       { "query": "skunk", "timestamp": 2443482573067 },
       { "query": "Grievous", "timestamp": 3087084504251 },
       { "query": "red", "timestamp": 2757697636139 }
-    ]
+    ],
+    "noise": 23
   },
   {
     "lat": 40.7233838596703,
@@ -10667,7 +10763,8 @@
       { "query": "Luke Skywalker", "timestamp": 3335326771288 },
       { "query": "kiwi", "timestamp": 3089875950747 },
       { "query": "jaguar", "timestamp": 2357782184193 }
-    ]
+    ],
+    "noise": 55
   },
   {
     "lat": 40.72023168866605,
@@ -10777,7 +10874,8 @@
       { "query": "black", "timestamp": 2128409121015 },
       { "query": "jackal", "timestamp": 3119411553523 },
       { "query": "aqua", "timestamp": 2354488950962 }
-    ]
+    ],
+    "noise": 38
   },
   {
     "lat": 40.725095203432765,
@@ -10887,7 +10985,8 @@
       { "query": "sapphire", "timestamp": 2749811245173 },
       { "query": "hummingbird", "timestamp": 2917065985873 },
       { "query": "sapphire", "timestamp": 2638362920288 }
-    ]
+    ],
+    "noise": 37
   },
   {
     "lat": 40.730568107126885,
@@ -10997,7 +11096,8 @@
       { "query": "rooster", "timestamp": 2476822795231 },
       { "query": "capybara", "timestamp": 1707161375718 },
       { "query": "possum", "timestamp": 2416672570757 }
-    ]
+    ],
+    "noise": 45
   },
   {
     "lat": 40.728478448982834,
@@ -11107,7 +11207,8 @@
       { "query": "Jar Jar Binks", "timestamp": 1847107686987 },
       { "query": "Wilhuff Tarkin", "timestamp": 1834925078052 },
       { "query": "capybara", "timestamp": 2909411255905 }
-    ]
+    ],
+    "noise": 58
   },
   {
     "lat": 40.728577961579816,
@@ -11217,7 +11318,8 @@
       { "query": "gray", "timestamp": 1891906863854 },
       { "query": "gopher", "timestamp": 3182601656915 },
       { "query": "maroon", "timestamp": 2045504648414 }
-    ]
+    ],
+    "noise": 54
   },
   {
     "lat": 40.716530882962985,
@@ -11327,7 +11429,8 @@
       { "query": "Eeth Koth", "timestamp": 2782621218719 },
       { "query": "otter", "timestamp": 2558750163195 },
       { "query": "cyan", "timestamp": 1851975149668 }
-    ]
+    ],
+    "noise": 75
   },
   {
     "lat": 40.72106758091982,
@@ -11437,7 +11540,8 @@
       { "query": "magenta", "timestamp": 3320111005529 },
       { "query": "bird", "timestamp": 3118871485510 },
       { "query": "bronze", "timestamp": 2188929439714 }
-    ]
+    ],
+    "noise": 79
   },
   {
     "lat": 40.72837623668289,
@@ -11547,7 +11651,8 @@
       { "query": "mastodon", "timestamp": 3238323164431 },
       { "query": "Plo Koon", "timestamp": 3013286115225 },
       { "query": "ermine", "timestamp": 2350942693538 }
-    ]
+    ],
+    "noise": 43
   },
   {
     "lat": 40.723942285433075,
@@ -11657,7 +11762,8 @@
       { "query": "magpie", "timestamp": 1744600940868 },
       { "query": "Poggle the Lesser", "timestamp": 1883022280126 },
       { "query": "crimson", "timestamp": 2560985639141 }
-    ]
+    ],
+    "noise": 54
   },
   {
     "lat": 40.71840344097033,
@@ -11767,7 +11873,8 @@
       { "query": "rabbit", "timestamp": 2886720664592 },
       { "query": "red", "timestamp": 1882363613073 },
       { "query": "Obi-Wan Kenobi", "timestamp": 2467859779959 }
-    ]
+    ],
+    "noise": 46
   },
   {
     "lat": 40.721123499218955,
@@ -11877,7 +11984,8 @@
       { "query": "chocolate", "timestamp": 2208774013511 },
       { "query": "plum", "timestamp": 2329678940898 },
       { "query": "chocolate", "timestamp": 2075460808513 }
-    ]
+    ],
+    "noise": 62
   },
   {
     "lat": 40.73218196534578,
@@ -11987,7 +12095,8 @@
       { "query": "Cliegg Lars", "timestamp": 2805042845368 },
       { "query": "moccasin", "timestamp": 2194624660588 },
       { "query": "tomato", "timestamp": 2600520973259 }
-    ]
+    ],
+    "noise": 53
   },
   {
     "lat": 40.72697553998494,
@@ -12097,7 +12206,8 @@
       { "query": "green", "timestamp": 3150700931705 },
       { "query": "indigo", "timestamp": 1773375818304 },
       { "query": "red", "timestamp": 1762323047038 }
-    ]
+    ],
+    "noise": 24
   },
   {
     "lat": 40.731400855001155,
@@ -12207,7 +12317,8 @@
       { "query": "C-3PO", "timestamp": 2020046971165 },
       { "query": "fuchsia", "timestamp": 1746882858635 },
       { "query": "eel", "timestamp": 1841449923710 }
-    ]
+    ],
+    "noise": 61
   },
   {
     "lat": 40.72145047352281,
@@ -12317,7 +12428,8 @@
       { "query": "Dud Bolt", "timestamp": 1833310185567 },
       { "query": "crane", "timestamp": 1830657095353 },
       { "query": "beige", "timestamp": 2051499627557 }
-    ]
+    ],
+    "noise": 26
   },
   {
     "lat": 40.73218322724039,
@@ -12427,7 +12539,8 @@
       { "query": "tan", "timestamp": 2130729727990 },
       { "query": "roundworm", "timestamp": 3074888600705 },
       { "query": "Darth Maul", "timestamp": 3163794003549 }
-    ]
+    ],
+    "noise": 53
   },
   {
     "lat": 40.73065691782933,
@@ -12537,7 +12650,8 @@
       { "query": "tyrannosaurus", "timestamp": 1738369566644 },
       { "query": "blush", "timestamp": 3302928489397 },
       { "query": "scarlet", "timestamp": 2295755792850 }
-    ]
+    ],
+    "noise": 46
   },
   {
     "lat": 40.729092310780636,
@@ -12647,7 +12761,8 @@
       { "query": "silver", "timestamp": 2348401296776 },
       { "query": "Lando Calrissian", "timestamp": 2547552741425 },
       { "query": "constrictor", "timestamp": 1910758730926 }
-    ]
+    ],
+    "noise": 56
   },
   {
     "lat": 40.72581803753433,
@@ -12757,7 +12872,8 @@
       { "query": "coral", "timestamp": 1934687959756 },
       { "query": "Dooku", "timestamp": 1944210288120 },
       { "query": "Ric Olié", "timestamp": 3287166553424 }
-    ]
+    ],
+    "noise": 68
   },
   {
     "lat": 40.7220925406098,
@@ -12867,7 +12983,8 @@
       { "query": "Lama Su", "timestamp": 2895422161714 },
       { "query": "harlequin", "timestamp": 3087600171862 },
       { "query": "camel", "timestamp": 1966427521326 }
-    ]
+    ],
+    "noise": 20
   },
   {
     "lat": 40.720845442642634,
@@ -12977,7 +13094,8 @@
       { "query": "moccasin", "timestamp": 2123964220136 },
       { "query": "lime", "timestamp": 1873789603302 },
       { "query": "grouse", "timestamp": 3218282456839 }
-    ]
+    ],
+    "noise": 71
   },
   {
     "lat": 40.72133233711352,
@@ -13087,7 +13205,8 @@
       { "query": "landfowl", "timestamp": 3232797739807 },
       { "query": "bobolink", "timestamp": 2212936912080 },
       { "query": "Wat Tambor", "timestamp": 2433222531847 }
-    ]
+    ],
+    "noise": 72
   },
   {
     "lat": 40.72158900573517,
@@ -13197,7 +13316,8 @@
       { "query": "Han Solo", "timestamp": 2947797524306 },
       { "query": "Mon Mothma", "timestamp": 1709520304152 },
       { "query": "Bail Prestor Organa", "timestamp": 2661398858168 }
-    ]
+    ],
+    "noise": 75
   },
   {
     "lat": 40.72253591181744,
@@ -13307,7 +13427,8 @@
       { "query": "amber", "timestamp": 1708605006869 },
       { "query": "Ki-Adi-Mundi", "timestamp": 2061579109449 },
       { "query": "green", "timestamp": 2181443884382 }
-    ]
+    ],
+    "noise": 58
   },
   {
     "lat": 40.72558024924629,
@@ -13417,7 +13538,8 @@
       { "query": "krill", "timestamp": 3190687691988 },
       { "query": "cougar", "timestamp": 2553297070430 },
       { "query": "wasp", "timestamp": 2387448476125 }
-    ]
+    ],
+    "noise": 44
   },
   {
     "lat": 40.72213097757639,
@@ -13527,7 +13649,8 @@
       { "query": "swan", "timestamp": 2722983387178 },
       { "query": "lime", "timestamp": 2190718318930 },
       { "query": "Ratts Tyerel", "timestamp": 1847252746587 }
-    ]
+    ],
+    "noise": 55
   },
   {
     "lat": 40.729442564907096,
@@ -13637,7 +13760,8 @@
       { "query": "indigo", "timestamp": 3251150591068 },
       { "query": "Nien Nunb", "timestamp": 2201524062926 },
       { "query": "Ki-Adi-Mundi", "timestamp": 2636746378128 }
-    ]
+    ],
+    "noise": 67
   },
   {
     "lat": 40.729595159424605,
@@ -13747,7 +13871,8 @@
       { "query": "baboon", "timestamp": 1999444284384 },
       { "query": "crimson", "timestamp": 2916095862959 },
       { "query": "tan", "timestamp": 1750461892350 }
-    ]
+    ],
+    "noise": 56
   },
   {
     "lat": 40.72896432715197,
@@ -13857,7 +13982,8 @@
       { "query": "Shaak Ti", "timestamp": 1845066606916 },
       { "query": "Cordé", "timestamp": 2385199895087 },
       { "query": "Nien Nunb", "timestamp": 2612476686343 }
-    ]
+    ],
+    "noise": 79
   },
   {
     "lat": 40.727975930191356,
@@ -13967,7 +14093,8 @@
       { "query": "black", "timestamp": 2278787260586 },
       { "query": "orange", "timestamp": 2952029162636 },
       { "query": "Ayla Secura", "timestamp": 3184693488012 }
-    ]
+    ],
+    "noise": 36
   },
   {
     "lat": 40.724912701779324,
@@ -14077,7 +14204,8 @@
       { "query": "quelea", "timestamp": 1727369929372 },
       { "query": "coffee", "timestamp": 2365942325556 },
       { "query": "eel", "timestamp": 3336100314869 }
-    ]
+    ],
+    "noise": 49
   },
   {
     "lat": 40.72893692486693,
@@ -14187,7 +14315,8 @@
       { "query": "grouse", "timestamp": 2949281016837 },
       { "query": "blue", "timestamp": 2812990644427 },
       { "query": "R5-D4", "timestamp": 2422770235094 }
-    ]
+    ],
+    "noise": 48
   },
   {
     "lat": 40.72594846892358,
@@ -14297,7 +14426,8 @@
       { "query": "Ric Olié", "timestamp": 2189359245890 },
       { "query": "silver", "timestamp": 3301533795231 },
       { "query": "cyan", "timestamp": 2945987456220 }
-    ]
+    ],
+    "noise": 68
   },
   {
     "lat": 40.73219830227011,
@@ -14407,7 +14537,8 @@
       { "query": "mouse", "timestamp": 2058095509222 },
       { "query": "aquamarine", "timestamp": 2555419882195 },
       { "query": "R5-D4", "timestamp": 2085356777074 }
-    ]
+    ],
+    "noise": 46
   },
   {
     "lat": 40.718454942472285,
@@ -14517,7 +14648,8 @@
       { "query": "firefly", "timestamp": 2303925613755 },
       { "query": "Wilhuff Tarkin", "timestamp": 3187515110106 },
       { "query": "raccoon", "timestamp": 2118554367463 }
-    ]
+    ],
+    "noise": 61
   },
   {
     "lat": 40.71883698896232,
@@ -14627,7 +14759,8 @@
       { "query": "lime", "timestamp": 2925686240141 },
       { "query": "R5-D4", "timestamp": 2722963537135 },
       { "query": "white", "timestamp": 2404591799103 }
-    ]
+    ],
+    "noise": 22
   },
   {
     "lat": 40.727571382416826,
@@ -14737,7 +14870,8 @@
       { "query": "crayfish", "timestamp": 2491042135078 },
       { "query": "narwhal", "timestamp": 2287740371359 },
       { "query": "barnacle", "timestamp": 2307704448388 }
-    ]
+    ],
+    "noise": 46
   },
   {
     "lat": 40.72444138019928,
@@ -14847,7 +14981,8 @@
       { "query": "Eeth Koth", "timestamp": 2913645941249 },
       { "query": "Wedge Antilles", "timestamp": 1734358793632 },
       { "query": "Mace Windu", "timestamp": 1813291031412 }
-    ]
+    ],
+    "noise": 26
   },
   {
     "lat": 40.72059946288499,
@@ -14957,7 +15092,8 @@
       { "query": "worm", "timestamp": 2868281294015 },
       { "query": "halibut", "timestamp": 2847877322277 },
       { "query": "plum", "timestamp": 3144017027809 }
-    ]
+    ],
+    "noise": 62
   },
   {
     "lat": 40.7267145444583,
@@ -15067,7 +15203,8 @@
       { "query": "whale", "timestamp": 2259569357648 },
       { "query": "rooster", "timestamp": 2059399013321 },
       { "query": "lavender", "timestamp": 2268431043062 }
-    ]
+    ],
+    "noise": 69
   },
   {
     "lat": 40.72977924491288,
@@ -15177,7 +15314,8 @@
       { "query": "moccasin", "timestamp": 2272275474059 },
       { "query": "white", "timestamp": 2585482539457 },
       { "query": "aqua", "timestamp": 3051563211253 }
-    ]
+    ],
+    "noise": 72
   },
   {
     "lat": 40.7279249901477,
@@ -15287,7 +15425,8 @@
       { "query": "rose", "timestamp": 2253105093770 },
       { "query": "Sebulba", "timestamp": 3112582004634 },
       { "query": "Dexter Jettster", "timestamp": 3018272248335 }
-    ]
+    ],
+    "noise": 37
   },
   {
     "lat": 40.730059122666226,
@@ -15397,7 +15536,8 @@
       { "query": "rose", "timestamp": 2758467004211 },
       { "query": "basilisk", "timestamp": 1989468956412 },
       { "query": "teal", "timestamp": 2764579121477 }
-    ]
+    ],
+    "noise": 52
   },
   {
     "lat": 40.7171376954155,
@@ -15507,7 +15647,8 @@
       { "query": "turquoise", "timestamp": 2150137931537 },
       { "query": "beaver", "timestamp": 2205691588359 },
       { "query": "Padmé Amidala", "timestamp": 2613654568715 }
-    ]
+    ],
+    "noise": 52
   },
   {
     "lat": 40.720517199804135,
@@ -15617,7 +15758,8 @@
       { "query": "toad", "timestamp": 1862650169087 },
       { "query": "bronze", "timestamp": 3327611585374 },
       { "query": "caribou", "timestamp": 3108644214072 }
-    ]
+    ],
+    "noise": 46
   },
   {
     "lat": 40.71962610548298,
@@ -15727,7 +15869,8 @@
       { "query": "Darth Maul", "timestamp": 2260341077146 },
       { "query": "amethyst", "timestamp": 2532368850740 },
       { "query": "brown", "timestamp": 2450343091843 }
-    ]
+    ],
+    "noise": 78
   },
   {
     "lat": 40.726335218209066,
@@ -15837,7 +15980,8 @@
       { "query": "turquoise", "timestamp": 1847069416440 },
       { "query": "white", "timestamp": 1930751582829 },
       { "query": "alpaca", "timestamp": 2401280515538 }
-    ]
+    ],
+    "noise": 73
   },
   {
     "lat": 40.72218348006752,
@@ -15947,7 +16091,8 @@
       { "query": "snail", "timestamp": 1996442804734 },
       { "query": "Qui-Gon Jinn", "timestamp": 2782640838524 },
       { "query": "muskox", "timestamp": 3210713907658 }
-    ]
+    ],
+    "noise": 69
   },
   {
     "lat": 40.72249771361404,
@@ -16057,7 +16202,8 @@
       { "query": "rattlesnake", "timestamp": 2439985938792 },
       { "query": "Ric Olié", "timestamp": 1994331058796 },
       { "query": "IG-88", "timestamp": 1755399769939 }
-    ]
+    ],
+    "noise": 54
   },
   {
     "lat": 40.71708511220678,
@@ -16167,7 +16313,8 @@
       { "query": "olive", "timestamp": 3147688703557 },
       { "query": "black", "timestamp": 2067484514012 },
       { "query": "Cliegg Lars", "timestamp": 3063411003205 }
-    ]
+    ],
+    "noise": 40
   },
   {
     "lat": 40.72770610059244,
@@ -16277,7 +16424,8 @@
       { "query": "donkey", "timestamp": 2529243200367 },
       { "query": "Tion Medon", "timestamp": 3128603199538 },
       { "query": "squirrel", "timestamp": 2218915397826 }
-    ]
+    ],
+    "noise": 32
   },
   {
     "lat": 40.72031700189284,
@@ -16387,7 +16535,8 @@
       { "query": "halibut", "timestamp": 2153791918181 },
       { "query": "lime", "timestamp": 2874383149412 },
       { "query": "Taun We", "timestamp": 1911301758431 }
-    ]
+    ],
+    "noise": 60
   },
   {
     "lat": 40.71866355693598,
@@ -16497,7 +16646,8 @@
       { "query": "kite", "timestamp": 1729601939875 },
       { "query": "San Hill", "timestamp": 2024582651140 },
       { "query": "Nute Gunray", "timestamp": 1992715912098 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.72836775849591,
@@ -16607,7 +16757,8 @@
       { "query": "copper", "timestamp": 3213855961173 },
       { "query": "scarlet", "timestamp": 2732106201470 },
       { "query": "squid", "timestamp": 2711282417650 }
-    ]
+    ],
+    "noise": 36
   },
   {
     "lat": 40.73175695650139,
@@ -16717,7 +16868,8 @@
       { "query": "roadrunner", "timestamp": 2596661236089 },
       { "query": "caterpillar", "timestamp": 3239741172805 },
       { "query": "aquamarine", "timestamp": 3169476586558 }
-    ]
+    ],
+    "noise": 67
   },
   {
     "lat": 40.72377766184421,
@@ -16827,7 +16979,8 @@
       { "query": "roadrunner", "timestamp": 3323308956847 },
       { "query": "brown", "timestamp": 1987172901891 },
       { "query": "gold", "timestamp": 2771907843575 }
-    ]
+    ],
+    "noise": 29
   },
   {
     "lat": 40.72117186741699,
@@ -16937,7 +17090,8 @@
       { "query": "muskox", "timestamp": 1775061135614 },
       { "query": "hare", "timestamp": 2975546833103 },
       { "query": "Dexter Jettster", "timestamp": 3033242784491 }
-    ]
+    ],
+    "noise": 33
   },
   {
     "lat": 40.72765249263351,
@@ -17047,7 +17201,8 @@
       { "query": "R4-P17", "timestamp": 2244709138345 },
       { "query": "blue", "timestamp": 2448780284333 },
       { "query": "locust", "timestamp": 2405509271084 }
-    ]
+    ],
+    "noise": 54
   },
   {
     "lat": 40.72228329027629,
@@ -17157,7 +17312,8 @@
       { "query": "maroon", "timestamp": 2135383878562 },
       { "query": "beige", "timestamp": 1953942919436 },
       { "query": "Cliegg Lars", "timestamp": 2790553803207 }
-    ]
+    ],
+    "noise": 57
   },
   {
     "lat": 40.7214176746756,
@@ -17267,7 +17423,8 @@
       { "query": "barracuda", "timestamp": 1985583318920 },
       { "query": "indigo", "timestamp": 1746747517249 },
       { "query": "Biggs Darklighter", "timestamp": 3091925194894 }
-    ]
+    ],
+    "noise": 38
   },
   {
     "lat": 40.71960505602253,
@@ -17377,7 +17534,8 @@
       { "query": "Cordé", "timestamp": 1942141117158 },
       { "query": "weasel", "timestamp": 2324615062851 },
       { "query": "bat", "timestamp": 2148258620932 }
-    ]
+    ],
+    "noise": 26
   },
   {
     "lat": 40.7272125732228,
@@ -17487,7 +17645,8 @@
       { "query": "Wat Tambor", "timestamp": 1928200364685 },
       { "query": "panther", "timestamp": 3206886960962 },
       { "query": "Wicket Systri Warrick", "timestamp": 2153710274350 }
-    ]
+    ],
+    "noise": 24
   },
   {
     "lat": 40.719388619254204,
@@ -17597,7 +17756,8 @@
       { "query": "C-3PO", "timestamp": 2279960040137 },
       { "query": "silkworm", "timestamp": 2360930030631 },
       { "query": "rhinoceros", "timestamp": 2427812940057 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.7232096947775,
@@ -17707,7 +17867,8 @@
       { "query": "white", "timestamp": 2410961380222 },
       { "query": "moccasin", "timestamp": 3337483635071 },
       { "query": "Luke Skywalker", "timestamp": 2106113359974 }
-    ]
+    ],
+    "noise": 45
   },
   {
     "lat": 40.72564426490664,
@@ -17817,7 +17978,8 @@
       { "query": "ivory", "timestamp": 2121703832762 },
       { "query": "horse", "timestamp": 2154839987642 },
       { "query": "purple", "timestamp": 2167484525243 }
-    ]
+    ],
+    "noise": 29
   },
   {
     "lat": 40.723088484942984,
@@ -17927,7 +18089,8 @@
       { "query": "ox", "timestamp": 3238770092884 },
       { "query": "panda", "timestamp": 2625521742680 },
       { "query": "silver", "timestamp": 2509639526680 }
-    ]
+    ],
+    "noise": 23
   },
   {
     "lat": 40.725174290583055,
@@ -18037,7 +18200,8 @@
       { "query": "guineafowl", "timestamp": 2184022398098 },
       { "query": "baboon", "timestamp": 2536378251933 },
       { "query": "partridge", "timestamp": 2200128109919 }
-    ]
+    ],
+    "noise": 30
   },
   {
     "lat": 40.728643810818525,
@@ -18147,7 +18311,8 @@
       { "query": "fuchsia", "timestamp": 2597697809293 },
       { "query": "tan", "timestamp": 2056365512656 },
       { "query": "Dormé", "timestamp": 2578043147671 }
-    ]
+    ],
+    "noise": 65
   },
   {
     "lat": 40.718534047600265,
@@ -18257,7 +18422,8 @@
       { "query": "Luminara Unduli", "timestamp": 2677960142413 },
       { "query": "hippopotamus", "timestamp": 2410861058775 },
       { "query": "constrictor", "timestamp": 2048993991560 }
-    ]
+    ],
+    "noise": 53
   },
   {
     "lat": 40.72259903692552,
@@ -18367,7 +18533,8 @@
       { "query": "green", "timestamp": 1707263254770 },
       { "query": "blush", "timestamp": 2961449757737 },
       { "query": "xerinae", "timestamp": 2686822866278 }
-    ]
+    ],
+    "noise": 70
   },
   {
     "lat": 40.71911461635738,
@@ -18477,7 +18644,8 @@
       { "query": "magenta", "timestamp": 2182288047535 },
       { "query": "IG-88", "timestamp": 3023492071667 },
       { "query": "Ric Olié", "timestamp": 2398535694533 }
-    ]
+    ],
+    "noise": 21
   },
   {
     "lat": 40.7252238646665,
@@ -18587,7 +18755,8 @@
       { "query": "albatross", "timestamp": 3107345098125 },
       { "query": "mole", "timestamp": 3108273886970 },
       { "query": "indigo", "timestamp": 2892141353044 }
-    ]
+    ],
+    "noise": 42
   },
   {
     "lat": 40.73157374092238,
@@ -18697,7 +18866,8 @@
       { "query": "capybara", "timestamp": 2960154536595 },
       { "query": "Padmé Amidala", "timestamp": 1813053937980 },
       { "query": "bison", "timestamp": 1799644856011 }
-    ]
+    ],
+    "noise": 34
   },
   {
     "lat": 40.7235944309868,
@@ -18807,7 +18977,8 @@
       { "query": "Luke Skywalker", "timestamp": 3175526678462 },
       { "query": "tomato", "timestamp": 1790978790019 },
       { "query": "Zam Wesell", "timestamp": 3254830562359 }
-    ]
+    ],
+    "noise": 51
   },
   {
     "lat": 40.72302458793322,
@@ -18917,7 +19088,8 @@
       { "query": "Arvel Crynyd", "timestamp": 2923979217886 },
       { "query": "catshark", "timestamp": 1902309006054 },
       { "query": "Dexter Jettster", "timestamp": 2251542237786 }
-    ]
+    ],
+    "noise": 41
   },
   {
     "lat": 40.72969275330313,
@@ -19027,7 +19199,8 @@
       { "query": "pink", "timestamp": 2961297196895 },
       { "query": "white", "timestamp": 2451556541799 },
       { "query": "moccasin", "timestamp": 1754965724313 }
-    ]
+    ],
+    "noise": 69
   },
   {
     "lat": 40.72275812962212,
@@ -19137,7 +19310,8 @@
       { "query": "Poggle the Lesser", "timestamp": 1900074195841 },
       { "query": "whale", "timestamp": 2569765205182 },
       { "query": "aqua", "timestamp": 2570681264695 }
-    ]
+    ],
+    "noise": 21
   },
   {
     "lat": 40.720978760025645,
@@ -19247,7 +19421,8 @@
       { "query": "Gregar Typho", "timestamp": 3084977048611 },
       { "query": "marmot", "timestamp": 2023050358847 },
       { "query": "crane", "timestamp": 2186403228127 }
-    ]
+    ],
+    "noise": 73
   },
   {
     "lat": 40.71845783852005,
@@ -19357,7 +19532,8 @@
       { "query": "flyingfish", "timestamp": 1781872085766 },
       { "query": "sturgeon", "timestamp": 2619702109338 },
       { "query": "smelt", "timestamp": 3053348719873 }
-    ]
+    ],
+    "noise": 43
   },
   {
     "lat": 40.725451223254446,
@@ -19467,7 +19643,8 @@
       { "query": "canid", "timestamp": 2452995773522 },
       { "query": "white", "timestamp": 2234120936960 },
       { "query": "cyan", "timestamp": 1780744360419 }
-    ]
+    ],
+    "noise": 78
   },
   {
     "lat": 40.72101126924749,
@@ -19577,7 +19754,8 @@
       { "query": "Ackbar", "timestamp": 2283893746741 },
       { "query": "Kit Fisto", "timestamp": 1683420348109 },
       { "query": "Sly Moore", "timestamp": 2532595178818 }
-    ]
+    ],
+    "noise": 56
   },
   {
     "lat": 40.72935256078502,
@@ -19687,7 +19865,8 @@
       { "query": "quokka", "timestamp": 2628300241539 },
       { "query": "trout", "timestamp": 3038598448948 },
       { "query": "rose", "timestamp": 2534386916718 }
-    ]
+    ],
+    "noise": 33
   },
   {
     "lat": 40.731473920276706,
@@ -19797,7 +19976,8 @@
       { "query": "ivory", "timestamp": 2480257523284 },
       { "query": "silver", "timestamp": 1882962988771 },
       { "query": "dragonfly", "timestamp": 2058065206928 }
-    ]
+    ],
+    "noise": 62
   },
   {
     "lat": 40.728191193743186,
@@ -19907,7 +20087,8 @@
       { "query": "walrus", "timestamp": 1876216342322 },
       { "query": "crawdad", "timestamp": 2048128873613 },
       { "query": "Kit Fisto", "timestamp": 1946100172837 }
-    ]
+    ],
+    "noise": 22
   },
   {
     "lat": 40.72180895373262,
@@ -20017,7 +20198,8 @@
       { "query": "Bossk", "timestamp": 3300854452401 },
       { "query": "chocolate", "timestamp": 2817788897005 },
       { "query": "violet", "timestamp": 2044103391668 }
-    ]
+    ],
+    "noise": 59
   },
   {
     "lat": 40.72726108858638,
@@ -20127,7 +20309,8 @@
       { "query": "azure", "timestamp": 2280690252063 },
       { "query": "plum", "timestamp": 2169320087464 },
       { "query": "San Hill", "timestamp": 1854714274894 }
-    ]
+    ],
+    "noise": 74
   },
   {
     "lat": 40.72110473229443,
@@ -20237,7 +20420,8 @@
       { "query": "Wat Tambor", "timestamp": 1778355295741 },
       { "query": "octopus", "timestamp": 2544158275288 },
       { "query": "beige", "timestamp": 2307578141014 }
-    ]
+    ],
+    "noise": 55
   },
   {
     "lat": 40.71965327037826,
@@ -20347,7 +20531,8 @@
       { "query": "Bail Prestor Organa", "timestamp": 2540508740353 },
       { "query": "Darth Maul", "timestamp": 2842277837749 },
       { "query": "lavender", "timestamp": 3094013466236 }
-    ]
+    ],
+    "noise": 25
   },
   {
     "lat": 40.72872906854708,
@@ -20457,7 +20642,8 @@
       { "query": "Bib Fortuna", "timestamp": 3008224087334 },
       { "query": "moccasin", "timestamp": 2488462462469 },
       { "query": "Dexter Jettster", "timestamp": 3265876927680 }
-    ]
+    ],
+    "noise": 51
   },
   {
     "lat": 40.73159796480732,
@@ -20567,7 +20753,8 @@
       { "query": "moccasin", "timestamp": 2853828006712 },
       { "query": "Shaak Ti", "timestamp": 2693107723974 },
       { "query": "condor", "timestamp": 2295090168984 }
-    ]
+    ],
+    "noise": 77
   },
   {
     "lat": 40.724200916728414,
@@ -20677,7 +20864,8 @@
       { "query": "Taun We", "timestamp": 2472556288460 },
       { "query": "tomato", "timestamp": 2027021783487 },
       { "query": "orange", "timestamp": 1901870855052 }
-    ]
+    ],
+    "noise": 77
   },
   {
     "lat": 40.718954853862904,
@@ -20787,7 +20975,8 @@
       { "query": "C-3PO", "timestamp": 2954975613977 },
       { "query": "platypus", "timestamp": 2251025703689 },
       { "query": "warbler", "timestamp": 2857376916266 }
-    ]
+    ],
+    "noise": 62
   },
   {
     "lat": 40.72529533318709,
@@ -20897,7 +21086,8 @@
       { "query": "loon", "timestamp": 2720139747629 },
       { "query": "Ki-Adi-Mundi", "timestamp": 1861691639473 },
       { "query": "indigo", "timestamp": 2957637676917 }
-    ]
+    ],
+    "noise": 24
   },
   {
     "lat": 40.71702652345499,
@@ -21007,7 +21197,8 @@
       { "query": "Rugor Nass", "timestamp": 2550608914814 },
       { "query": "Arvel Crynyd", "timestamp": 2336784668931 },
       { "query": "catshark", "timestamp": 2127737957942 }
-    ]
+    ],
+    "noise": 62
   },
   {
     "lat": 40.72079801339733,
@@ -21117,7 +21308,8 @@
       { "query": "Mace Windu", "timestamp": 3218079599682 },
       { "query": "Yoda", "timestamp": 2312112216262 },
       { "query": "Barriss Offee", "timestamp": 2399121562743 }
-    ]
+    ],
+    "noise": 61
   },
   {
     "lat": 40.725334559210566,
@@ -21227,7 +21419,8 @@
       { "query": "Padmé Amidala", "timestamp": 2373986904297 },
       { "query": "silver", "timestamp": 1743996770441 },
       { "query": "aardvark", "timestamp": 3157370389669 }
-    ]
+    ],
+    "noise": 21
   },
   {
     "lat": 40.727724475653176,
@@ -21337,7 +21530,8 @@
       { "query": "gorilla", "timestamp": 3160915639488 },
       { "query": "yellow", "timestamp": 3113219989366 },
       { "query": "spider", "timestamp": 2764071012783 }
-    ]
+    ],
+    "noise": 66
   },
   {
     "lat": 40.72597269190902,
@@ -21447,7 +21641,8 @@
       { "query": "Ayla Secura", "timestamp": 2449148234186 },
       { "query": "Lobot", "timestamp": 2096949570155 },
       { "query": "turtle", "timestamp": 3120021214930 }
-    ]
+    ],
+    "noise": 24
   },
   {
     "lat": 40.724480664831574,
@@ -21557,7 +21752,8 @@
       { "query": "Yoda", "timestamp": 2782531192221 },
       { "query": "Finis Valorum", "timestamp": 2552745922207 },
       { "query": "IG-88", "timestamp": 2348839159411 }
-    ]
+    ],
+    "noise": 23
   },
   {
     "lat": 40.72418311593095,
@@ -21667,7 +21863,8 @@
       { "query": "Raymus Antilles", "timestamp": 2104285406407 },
       { "query": "gray", "timestamp": 2979027525320 },
       { "query": "crimson", "timestamp": 2477028621270 }
-    ]
+    ],
+    "noise": 65
   },
   {
     "lat": 40.72960136182139,
@@ -21777,7 +21974,8 @@
       { "query": "swordtail", "timestamp": 2061667621560 },
       { "query": "swift", "timestamp": 2248716763223 },
       { "query": "Cordé", "timestamp": 3236593575573 }
-    ]
+    ],
+    "noise": 31
   },
   {
     "lat": 40.727611833788686,
@@ -21887,7 +22085,8 @@
       { "query": "olive", "timestamp": 1792267992150 },
       { "query": "magenta", "timestamp": 2457284954263 },
       { "query": "aqua", "timestamp": 2999390022243 }
-    ]
+    ],
+    "noise": 77
   },
   {
     "lat": 40.71611480718351,
@@ -21997,6 +22196,7 @@
       { "query": "coffee", "timestamp": 2312709885419 },
       { "query": "carp", "timestamp": 1671314759749 },
       { "query": "Ric Olié", "timestamp": 1930391859264 }
-    ]
+    ],
+    "noise": 34
   }
 ]

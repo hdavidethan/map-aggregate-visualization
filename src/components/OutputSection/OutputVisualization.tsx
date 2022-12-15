@@ -132,9 +132,9 @@ function OutputVisualization({ output, outputType }: Props) {
           colors={{
             type: "sequential",
             scheme: "oranges",
-            divergeAt: 0.5,
-            minValue: 0,
-            maxValue: 1,
+            divergeAt: 70,
+            minValue: 20,
+            maxValue: 120,
           }}
           emptyColor="#555555"
           valueFormat=">-.3r"

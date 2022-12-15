@@ -27,6 +27,15 @@ function MarkerPopupContent({ marker, halfHourIndex }: Props) {
         </>
       );
     }
+    case QueryType[QueryType.NOISE_MAP]: {
+      return (
+        <>
+          <p className="my-0">Latitude: {marker.lat}</p>
+          <p className="my-0">Longitude: {marker.lng}</p>
+          <p className="my-0">Noise Level: {marker.noise}</p>
+        </>
+      );
+    }
     case QueryType[QueryType.TRENDS]: {
       return (
         <>

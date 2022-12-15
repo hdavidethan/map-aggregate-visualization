@@ -1,11 +1,12 @@
 const locations = require("./locations.json");
-const wordCloudData = require("./searchTrends.json");
+const noiseData = require("./noise.json");
+// const wordCloudData = require("./searchTrends.json");
 const fs = require("fs");
 
 const locationMap = {};
 
-for (const location of wordCloudData) {
-  locationMap[`${location.lat},${location.lng}`] = location.queries;
+for (const location of noiseData) {
+  locationMap[`${location.lat},${location.lng}`] = location.noiseLevel;
 }
 
 const result = [];
@@ -13,7 +14,7 @@ const result = [];
 for (const location of locations) {
   result.push({
     ...location,
-    searchQueries: locationMap[`${location.lat},${location.lng}`],
+    noise: locationMap[`${location.lat},${location.lng}`],
   });
 }
 

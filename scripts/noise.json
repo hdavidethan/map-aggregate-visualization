@@ -1,0 +1,1402 @@
+[
+  {
+    "lat": 40.72594662602202,
+    "lng": -74.00115372780846,
+    "noiseLevel": 56,
+    "timestamp": 1671082120087,
+    "url": "https://accznriv8e.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-0"
+  },
+  {
+    "lat": 40.72174522386634,
+    "lng": -73.99565525397365,
+    "noiseLevel": 55,
+    "timestamp": 1671082120087,
+    "url": "https://0m34y443ai.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-1"
+  },
+  {
+    "lat": 40.720975934014184,
+    "lng": -73.99759954015941,
+    "noiseLevel": 76,
+    "timestamp": 1671082120087,
+    "url": "https://g65qugcd8c.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-10"
+  },
+  {
+    "lat": 40.71939626548998,
+    "lng": -74.0000378494813,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087,
+    "url": "https://yciy0r06tf.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-11"
+  },
+  {
+    "lat": 40.72767919528258,
+    "lng": -73.98949728788256,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087,
+    "url": "https://ziesz5oo7g.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-12"
+  },
+  {
+    "lat": 40.726283271605965,
+    "lng": -73.99171027438454,
+    "noiseLevel": 47,
+    "timestamp": 1671082120087,
+    "url": "https://i1dp4gg2v6.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-13"
+  },
+  {
+    "lat": 40.721598396911105,
+    "lng": -73.98988443661239,
+    "noiseLevel": 78,
+    "timestamp": 1671082120087,
+    "url": "https://kiupyboz3b.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-14"
+  },
+  {
+    "lat": 40.72365299395383,
+    "lng": -73.99816665821635,
+    "noiseLevel": 77,
+    "timestamp": 1671082120087,
+    "url": "https://pe2jt2p8eg.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-15"
+  },
+  {
+    "lat": 40.71745848843918,
+    "lng": -73.99100570783683,
+    "noiseLevel": 47,
+    "timestamp": 1671082120087,
+    "url": "https://n0iz0hiwl4.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-16"
+  },
+  {
+    "lat": 40.72978710778243,
+    "lng": -73.99492645889126,
+    "noiseLevel": 62,
+    "timestamp": 1671082120087,
+    "url": "https://62rf3xr6y0.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-17"
+  },
+  {
+    "lat": 40.72282834170115,
+    "lng": -73.98985478633914,
+    "noiseLevel": 22,
+    "timestamp": 1671082120087,
+    "url": "https://qqe9igzk76.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-18"
+  },
+  {
+    "lat": 40.72552627427399,
+    "lng": -74.00035144266565,
+    "noiseLevel": 21,
+    "timestamp": 1671082120087,
+    "url": "https://95x8c6gl3j.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-19"
+  },
+  {
+    "lat": 40.72645763334378,
+    "lng": -73.98864370478708,
+    "noiseLevel": 35,
+    "timestamp": 1671082120087,
+    "url": "https://27s7hk0dbj.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-2"
+  },
+  {
+    "lat": 40.71822758589196,
+    "lng": -73.99616936161051,
+    "noiseLevel": 55,
+    "timestamp": 1671082120087,
+    "url": "https://cip1netje8.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-20"
+  },
+  {
+    "lat": 40.725757301028054,
+    "lng": -74.00261649466049,
+    "noiseLevel": 30,
+    "timestamp": 1671082120087,
+    "url": "https://0amz3lrks3.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-21"
+  },
+  {
+    "lat": 40.72409860307388,
+    "lng": -74.00052630245264,
+    "noiseLevel": 51,
+    "timestamp": 1671082120087,
+    "url": "https://fnljdvujwf.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-22"
+  },
+  {
+    "lat": 40.72658398165521,
+    "lng": -73.99863256925585,
+    "noiseLevel": 76,
+    "timestamp": 1671082120087,
+    "url": "https://56sl6r6feb.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-23"
+  },
+  {
+    "lat": 40.729797056082994,
+    "lng": -73.99470946634084,
+    "noiseLevel": 77,
+    "timestamp": 1671082120087,
+    "url": "https://wozkyk6u99.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-24"
+  },
+  {
+    "lat": 40.72815707503304,
+    "lng": -74.00226468940252,
+    "noiseLevel": 44,
+    "timestamp": 1671082120087,
+    "url": "https://hi1zdzi6d5.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-25"
+  },
+  {
+    "lat": 40.72068758366428,
+    "lng": -73.99655167286751,
+    "noiseLevel": 55,
+    "timestamp": 1671082120087,
+    "url": "https://qan7hhldl1.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-26"
+  },
+  {
+    "lat": 40.718074301286734,
+    "lng": -73.99708666465821,
+    "noiseLevel": 61,
+    "timestamp": 1671082120087,
+    "url": "https://zo1caew1p2.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-27"
+  },
+  {
+    "lat": 40.729190343358695,
+    "lng": -73.99584403472338,
+    "noiseLevel": 36,
+    "timestamp": 1671082120087,
+    "url": "https://e8l5qklzza.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-28"
+  },
+  {
+    "lat": 40.726944783427015,
+    "lng": -73.9888636302134,
+    "noiseLevel": 75,
+    "timestamp": 1671082120087,
+    "url": "https://dcx4to7ii5.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-29"
+  },
+  {
+    "lat": 40.72786096667362,
+    "lng": -73.9914971969367,
+    "noiseLevel": 48,
+    "timestamp": 1671082120087,
+    "url": "https://bvaqup56be.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-3"
+  },
+  {
+    "lat": 40.72441408433001,
+    "lng": -74.0036825047335,
+    "noiseLevel": 28,
+    "timestamp": 1671082120087,
+    "url": "https://czdnls48aa.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-30"
+  },
+  {
+    "lat": 40.72825741117714,
+    "lng": -73.99897682938511,
+    "noiseLevel": 20,
+    "timestamp": 1671082120087,
+    "url": "https://vlf0gb44r3.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-31"
+  },
+  {
+    "lat": 40.71832265049635,
+    "lng": -73.99609685856827,
+    "noiseLevel": 67,
+    "timestamp": 1671082120087,
+    "url": "https://denqq39ttf.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-32"
+  },
+  {
+    "lat": 40.717834841817044,
+    "lng": -73.9906119347361,
+    "noiseLevel": 59,
+    "timestamp": 1671082120087,
+    "url": "https://0amq79ukr4.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-33"
+  },
+  {
+    "lat": 40.727455420017826,
+    "lng": -73.9929987784386,
+    "noiseLevel": 20,
+    "timestamp": 1671082120087,
+    "url": "https://mjh2wvgq9d.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-34"
+  },
+  {
+    "lat": 40.729637557672625,
+    "lng": -74.00174696911174,
+    "noiseLevel": 23,
+    "timestamp": 1671082120087,
+    "url": "https://8txul5vcbj.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-35"
+  },
+  {
+    "lat": 40.720675598764146,
+    "lng": -73.9928098978422,
+    "noiseLevel": 67,
+    "timestamp": 1671082120087,
+    "url": "https://fk74uj8g6k.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-36"
+  },
+  {
+    "lat": 40.7183909308716,
+    "lng": -74.00200421338087,
+    "noiseLevel": 42,
+    "timestamp": 1671082120087,
+    "url": "https://i43gvlijz4.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-37"
+  },
+  {
+    "lat": 40.723735980188124,
+    "lng": -73.98855691403138,
+    "noiseLevel": 34,
+    "timestamp": 1671082120087,
+    "url": "https://5gjh94pm34.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-38"
+  },
+  {
+    "lat": 40.729930629030335,
+    "lng": -73.99830505139182,
+    "noiseLevel": 78,
+    "timestamp": 1671082120087,
+    "url": "https://pplmd0ju4c.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-39"
+  },
+  {
+    "lat": 40.729947180884395,
+    "lng": -73.99233764832401,
+    "noiseLevel": 32,
+    "timestamp": 1671082120087,
+    "url": "https://domm5hcuik.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-4"
+  },
+  {
+    "lat": 40.72698331267425,
+    "lng": -73.99416667499713,
+    "noiseLevel": 41,
+    "timestamp": 1671082120087,
+    "url": "https://xb41vcqweg.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-40"
+  },
+  {
+    "lat": 40.72603744514773,
+    "lng": -74.00168964207086,
+    "noiseLevel": 50,
+    "timestamp": 1671082120087,
+    "url": "https://ayvoe9qsm5.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-41"
+  },
+  {
+    "lat": 40.717132811033515,
+    "lng": -73.993673679672,
+    "noiseLevel": 36,
+    "timestamp": 1671082120087,
+    "url": "https://2q2eepo5o8.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-42"
+  },
+  {
+    "lat": 40.72589581468339,
+    "lng": -73.99432180284582,
+    "noiseLevel": 77,
+    "timestamp": 1671082120087,
+    "url": "https://7d89t1l8yj.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-43"
+  },
+  {
+    "lat": 40.73132463071766,
+    "lng": -73.99796722998794,
+    "noiseLevel": 40,
+    "timestamp": 1671082120087,
+    "url": "https://3rxypsgv5k.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-44"
+  },
+  {
+    "lat": 40.725828780430035,
+    "lng": -73.99398060630703,
+    "noiseLevel": 76,
+    "timestamp": 1671082120087,
+    "url": "https://lyr6awg8hh.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-45"
+  },
+  {
+    "lat": 40.72124914737974,
+    "lng": -74.00463787130914,
+    "noiseLevel": 67,
+    "timestamp": 1671082120087,
+    "url": "https://5wz9su5dng.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-46"
+  },
+  {
+    "lat": 40.728740584827165,
+    "lng": -73.99968201180806,
+    "noiseLevel": 29,
+    "timestamp": 1671082120087,
+    "url": "https://qr47us96j0.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-47"
+  },
+  {
+    "lat": 40.72158777643871,
+    "lng": -74.00397274393332,
+    "noiseLevel": 71,
+    "timestamp": 1671082120087,
+    "url": "https://hw3vny01e2.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-48"
+  },
+  {
+    "lat": 40.728066954855656,
+    "lng": -73.99389196115321,
+    "noiseLevel": 34,
+    "timestamp": 1671082120087,
+    "url": "https://9hyu92ye54.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-49"
+  },
+  {
+    "lat": 40.73047765783463,
+    "lng": -74.00134053584725,
+    "noiseLevel": 31,
+    "timestamp": 1671082120087,
+    "url": "https://rhm7syn0x6.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-5"
+  },
+  {
+    "lat": 40.73251911955895,
+    "lng": -73.99564366674626,
+    "noiseLevel": 71,
+    "timestamp": 1671082120087,
+    "url": "https://2x85fuxzda.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-50"
+  },
+  {
+    "lat": 40.72685552049006,
+    "lng": -73.98973117340037,
+    "noiseLevel": 30,
+    "timestamp": 1671082120087,
+    "url": "https://jfbzbhezeb.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-51"
+  },
+  {
+    "lat": 40.7270389211371,
+    "lng": -73.99615681757162,
+    "noiseLevel": 22,
+    "timestamp": 1671082120087,
+    "url": "https://s4lr2toe1j.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-52"
+  },
+  {
+    "lat": 40.726853273131496,
+    "lng": -74.00206563359045,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087,
+    "url": "https://g2harrvhhe.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-53"
+  },
+  {
+    "lat": 40.72897234718668,
+    "lng": -74.00103185580329,
+    "noiseLevel": 23,
+    "timestamp": 1671082120087,
+    "url": "https://d1l84o3fkd.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-54"
+  },
+  {
+    "lat": 40.72184809840414,
+    "lng": -74.00395810514023,
+    "noiseLevel": 34,
+    "timestamp": 1671082120087,
+    "url": "https://cc0gt5vtnb.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-55"
+  },
+  {
+    "lat": 40.72983210263203,
+    "lng": -73.99761473569669,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087,
+    "url": "https://9th61midd7.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-56"
+  },
+  {
+    "lat": 40.72768788448983,
+    "lng": -73.99508877519702,
+    "noiseLevel": 67,
+    "timestamp": 1671082120087,
+    "url": "https://d609xgww0f.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-57"
+  },
+  {
+    "lat": 40.721980226562415,
+    "lng": -74.00235910924043,
+    "noiseLevel": 42,
+    "timestamp": 1671082120087,
+    "url": "https://um3rybmcmh.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-58"
+  },
+  {
+    "lat": 40.72430632723582,
+    "lng": -73.9887483613431,
+    "noiseLevel": 75,
+    "timestamp": 1671082120087,
+    "url": "https://l5sixuin8h.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-59"
+  },
+  {
+    "lat": 40.717996040704755,
+    "lng": -73.99148237312306,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087,
+    "url": "https://0mg5uvv4p0.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-6"
+  },
+  {
+    "lat": 40.73270090193275,
+    "lng": -73.9933307860715,
+    "noiseLevel": 51,
+    "timestamp": 1671082120087,
+    "url": "https://c4dr26wcn1.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-60"
+  },
+  {
+    "lat": 40.72697024184477,
+    "lng": -73.98996573024473,
+    "noiseLevel": 49,
+    "timestamp": 1671082120087,
+    "url": "https://jpl5w6dodg.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-61"
+  },
+  {
+    "lat": 40.72230391811479,
+    "lng": -73.9977301807193,
+    "noiseLevel": 67,
+    "timestamp": 1671082120087,
+    "url": "https://vhvv01acxb.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-62"
+  },
+  {
+    "lat": 40.72117878432256,
+    "lng": -74.00093938247207,
+    "noiseLevel": 25,
+    "timestamp": 1671082120087,
+    "url": "https://cgw4yrmpea.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-63"
+  },
+  {
+    "lat": 40.71872515235284,
+    "lng": -73.99691757429888,
+    "noiseLevel": 54,
+    "timestamp": 1671082120087,
+    "url": "https://r6h8w14i6i.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-64"
+  },
+  {
+    "lat": 40.721659279215594,
+    "lng": -74.00311396249175,
+    "noiseLevel": 67,
+    "timestamp": 1671082120087,
+    "url": "https://rreh7jqyb2.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-65"
+  },
+  {
+    "lat": 40.73217257588506,
+    "lng": -73.9991633137711,
+    "noiseLevel": 50,
+    "timestamp": 1671082120087,
+    "url": "https://ado6dm3997.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-66"
+  },
+  {
+    "lat": 40.724106375182075,
+    "lng": -73.99002890135607,
+    "noiseLevel": 44,
+    "timestamp": 1671082120087,
+    "url": "https://gnwk0p4iib.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-67"
+  },
+  {
+    "lat": 40.7263605673416,
+    "lng": -74.00481903418331,
+    "noiseLevel": 60,
+    "timestamp": 1671082120087,
+    "url": "https://sym5b6w6uj.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-68"
+  },
+  {
+    "lat": 40.72268566226542,
+    "lng": -74.00124104766103,
+    "noiseLevel": 54,
+    "timestamp": 1671082120087,
+    "url": "https://2yv7intqc5.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-69"
+  },
+  {
+    "lat": 40.723509978002205,
+    "lng": -73.9910576156674,
+    "noiseLevel": 75,
+    "timestamp": 1671082120087,
+    "url": "https://c42zk1dlb8.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-7"
+  },
+  {
+    "lat": 40.728100833342545,
+    "lng": -73.99364261703377,
+    "noiseLevel": 78,
+    "timestamp": 1671082120087,
+    "url": "https://6hbntso5he.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-70"
+  },
+  {
+    "lat": 40.71996910123659,
+    "lng": -73.98985093986583,
+    "noiseLevel": 39,
+    "timestamp": 1671082120087,
+    "url": "https://q7c3tvpiw8.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-71"
+  },
+  {
+    "lat": 40.72345760717769,
+    "lng": -73.99874596018971,
+    "noiseLevel": 54,
+    "timestamp": 1671082120087,
+    "url": "https://hwzaobilf4.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-72"
+  },
+  {
+    "lat": 40.72661340720665,
+    "lng": -73.99415762200032,
+    "noiseLevel": 33,
+    "timestamp": 1671082120087,
+    "url": "https://k76j6qxp61.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-73"
+  },
+  {
+    "lat": 40.72881252775347,
+    "lng": -73.99378584517552,
+    "noiseLevel": 57,
+    "timestamp": 1671082120087,
+    "url": "https://omfy2cz5k3.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-74"
+  },
+  {
+    "lat": 40.731166393495926,
+    "lng": -74.00002143059581,
+    "noiseLevel": 46,
+    "timestamp": 1671082120087,
+    "url": "https://ky6c237x95.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-75"
+  },
+  {
+    "lat": 40.73170862785488,
+    "lng": -73.99104699280669,
+    "noiseLevel": 60,
+    "timestamp": 1671082120087,
+    "url": "https://i52oom5ap8.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-76"
+  },
+  {
+    "lat": 40.72659824714863,
+    "lng": -73.99686713205989,
+    "noiseLevel": 47,
+    "timestamp": 1671082120087,
+    "url": "https://1d4sd0v0qa.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-77"
+  },
+  {
+    "lat": 40.723374056554164,
+    "lng": -73.99715863663072,
+    "noiseLevel": 34,
+    "timestamp": 1671082120087,
+    "url": "https://a5814upavd.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-78"
+  },
+  {
+    "lat": 40.729386774677195,
+    "lng": -73.99798301989506,
+    "noiseLevel": 50,
+    "timestamp": 1671082120087,
+    "url": "https://c6wxq84dl7.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-79"
+  },
+  {
+    "lat": 40.729376618575316,
+    "lng": -73.99189123271633,
+    "noiseLevel": 61,
+    "timestamp": 1671082120087,
+    "url": "https://1mq0bwzm47.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-8"
+  },
+  {
+    "lat": 40.72964635619794,
+    "lng": -73.99068446699815,
+    "noiseLevel": 71,
+    "timestamp": 1671082120087,
+    "url": "https://jr6yqeu527.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-80"
+  },
+  {
+    "lat": 40.72017043609274,
+    "lng": -73.99878379587825,
+    "noiseLevel": 33,
+    "timestamp": 1671082120087,
+    "url": "https://6r5zwpmpk3.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-81"
+  },
+  {
+    "lat": 40.719245290896616,
+    "lng": -73.99780713678734,
+    "noiseLevel": 76,
+    "timestamp": 1671082120087,
+    "url": "https://i7j48hvu53.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-82"
+  },
+  {
+    "lat": 40.72232510644351,
+    "lng": -74.00260353589296,
+    "noiseLevel": 66,
+    "timestamp": 1671082120087,
+    "url": "https://snc7v3h4ri.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-83"
+  },
+  {
+    "lat": 40.71758484596292,
+    "lng": -73.99804525366943,
+    "noiseLevel": 57,
+    "timestamp": 1671082120087,
+    "url": "https://u0lhfb7m6i.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-84"
+  },
+  {
+    "lat": 40.71917149045096,
+    "lng": -74.00179633415023,
+    "noiseLevel": 38,
+    "timestamp": 1671082120087,
+    "url": "https://oy4dskvv3k.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-85"
+  },
+  {
+    "lat": 40.72290551339101,
+    "lng": -73.99338088914155,
+    "noiseLevel": 23,
+    "timestamp": 1671082120087,
+    "url": "https://2ulr7git3j.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-86"
+  },
+  {
+    "lat": 40.72639449930221,
+    "lng": -73.99765462125207,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087,
+    "url": "https://6ibaf6fp9a.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-87"
+  },
+  {
+    "lat": 40.73158670356181,
+    "lng": -74.00117171276797,
+    "noiseLevel": 48,
+    "timestamp": 1671082120087,
+    "url": "https://lf95vdbmwj.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-88"
+  },
+  {
+    "lat": 40.729949558808805,
+    "lng": -73.99280158999679,
+    "noiseLevel": 71,
+    "timestamp": 1671082120087,
+    "url": "https://qdqi9jnxq4.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-89"
+  },
+  {
+    "lat": 40.71828688416745,
+    "lng": -73.99578698714632,
+    "noiseLevel": 24,
+    "timestamp": 1671082120087,
+    "url": "https://rcxvn3838b.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-9"
+  },
+  {
+    "lat": 40.7270423435508,
+    "lng": -73.99062774094259,
+    "noiseLevel": 31,
+    "timestamp": 1671082120087,
+    "url": "https://040siwt0n5.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-90"
+  },
+  {
+    "lat": 40.731748961253835,
+    "lng": -74.00035928508105,
+    "noiseLevel": 74,
+    "timestamp": 1671082120087,
+    "url": "https://berleue2r4.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-91"
+  },
+  {
+    "lat": 40.73096117357881,
+    "lng": -73.99731596333933,
+    "noiseLevel": 72,
+    "timestamp": 1671082120087,
+    "url": "https://r737xftf39.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-92"
+  },
+  {
+    "lat": 40.72728185917838,
+    "lng": -73.98793173308228,
+    "noiseLevel": 34,
+    "timestamp": 1671082120087,
+    "url": "https://uvb940rkx9.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-93"
+  },
+  {
+    "lat": 40.7251255810641,
+    "lng": -73.99483330361069,
+    "noiseLevel": 68,
+    "timestamp": 1671082120087,
+    "url": "https://lqe6cx03md.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-94"
+  },
+  {
+    "lat": 40.7250340769494,
+    "lng": -74.00072519562079,
+    "noiseLevel": 23,
+    "timestamp": 1671082120087,
+    "url": "https://32tb5lo7vh.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-95"
+  },
+  {
+    "lat": 40.7233838596703,
+    "lng": -74.00013788277423,
+    "noiseLevel": 55,
+    "timestamp": 1671082120087,
+    "url": "https://cz7c0tw3r4.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-96"
+  },
+  {
+    "lat": 40.72023168866605,
+    "lng": -73.99325664635039,
+    "noiseLevel": 38,
+    "timestamp": 1671082120087,
+    "url": "https://5xoxl81l6l.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-97"
+  },
+  {
+    "lat": 40.725095203432765,
+    "lng": -73.99472459240812,
+    "noiseLevel": 37,
+    "timestamp": 1671082120087,
+    "url": "https://4sy7vs2zv2.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-98"
+  },
+  {
+    "lat": 40.730568107126885,
+    "lng": -74.0015460911638,
+    "noiseLevel": 45,
+    "timestamp": 1671082120087,
+    "url": "https://qpan22mdq9.execute-api.us-east-2.amazonaws.com/Prod",
+    "stackName": "noise-map-network-99"
+  },
+  {
+    "lat": 40.728478448982834,
+    "lng": -73.99163232422234,
+    "noiseLevel": 58,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.728577961579816,
+    "lng": -74.00140074491,
+    "noiseLevel": 54,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.716530882962985,
+    "lng": -73.99967328534657,
+    "noiseLevel": 75,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72106758091982,
+    "lng": -73.99467778992675,
+    "noiseLevel": 79,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72837623668289,
+    "lng": -73.99886121000063,
+    "noiseLevel": 43,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.723942285433075,
+    "lng": -74.00144008061993,
+    "noiseLevel": 54,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71840344097033,
+    "lng": -73.99886493742503,
+    "noiseLevel": 46,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.721123499218955,
+    "lng": -73.99082849181029,
+    "noiseLevel": 62,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.73218196534578,
+    "lng": -73.99362931820473,
+    "noiseLevel": 53,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72697553998494,
+    "lng": -74.00028283987609,
+    "noiseLevel": 24,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.731400855001155,
+    "lng": -73.9911148604443,
+    "noiseLevel": 61,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72145047352281,
+    "lng": -73.99325351702596,
+    "noiseLevel": 26,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.73218322724039,
+    "lng": -73.99364486277372,
+    "noiseLevel": 53,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.73065691782933,
+    "lng": -74.00181079994172,
+    "noiseLevel": 46,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.729092310780636,
+    "lng": -73.99197906941276,
+    "noiseLevel": 56,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72581803753433,
+    "lng": -73.98770831850315,
+    "noiseLevel": 68,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7220925406098,
+    "lng": -73.99136084875148,
+    "noiseLevel": 20,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.720845442642634,
+    "lng": -74.00402502092466,
+    "noiseLevel": 71,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72133233711352,
+    "lng": -74.0008060776982,
+    "noiseLevel": 72,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72158900573517,
+    "lng": -73.99387519804287,
+    "noiseLevel": 75,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72253591181744,
+    "lng": -73.98986808805219,
+    "noiseLevel": 58,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72558024924629,
+    "lng": -74.00368219409043,
+    "noiseLevel": 44,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72213097757639,
+    "lng": -73.99191678899713,
+    "noiseLevel": 55,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.729442564907096,
+    "lng": -73.99603159407049,
+    "noiseLevel": 67,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.729595159424605,
+    "lng": -73.99964060455011,
+    "noiseLevel": 56,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72896432715197,
+    "lng": -74.00127829393543,
+    "noiseLevel": 79,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.727975930191356,
+    "lng": -73.99572724404167,
+    "noiseLevel": 36,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.724912701779324,
+    "lng": -73.99900962097522,
+    "noiseLevel": 49,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72893692486693,
+    "lng": -74.00008310212912,
+    "noiseLevel": 48,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72594846892358,
+    "lng": -74.00174197606292,
+    "noiseLevel": 68,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.73219830227011,
+    "lng": -73.99558932481332,
+    "noiseLevel": 46,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.718454942472285,
+    "lng": -74.00011087909469,
+    "noiseLevel": 61,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71883698896232,
+    "lng": -73.99615436501661,
+    "noiseLevel": 22,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.727571382416826,
+    "lng": -73.99365443280605,
+    "noiseLevel": 46,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72444138019928,
+    "lng": -73.99045945941862,
+    "noiseLevel": 26,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72059946288499,
+    "lng": -73.99312915855482,
+    "noiseLevel": 62,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7267145444583,
+    "lng": -74.00094978765162,
+    "noiseLevel": 69,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72977924491288,
+    "lng": -74.00148670303632,
+    "noiseLevel": 72,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7279249901477,
+    "lng": -73.99919883034485,
+    "noiseLevel": 37,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.730059122666226,
+    "lng": -73.99658602873963,
+    "noiseLevel": 52,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7171376954155,
+    "lng": -73.99868024987191,
+    "noiseLevel": 52,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.720517199804135,
+    "lng": -73.99542929899071,
+    "noiseLevel": 46,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71962610548298,
+    "lng": -74.0030847872178,
+    "noiseLevel": 78,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.726335218209066,
+    "lng": -73.99606709390282,
+    "noiseLevel": 73,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72218348006752,
+    "lng": -73.99992188433347,
+    "noiseLevel": 69,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72249771361404,
+    "lng": -73.98834896848066,
+    "noiseLevel": 54,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71708511220678,
+    "lng": -73.9964375828691,
+    "noiseLevel": 40,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72770610059244,
+    "lng": -73.99807738659624,
+    "noiseLevel": 32,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72031700189284,
+    "lng": -73.99153833807219,
+    "noiseLevel": 60,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71866355693598,
+    "lng": -74.0009096566852,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72836775849591,
+    "lng": -74.00145516445306,
+    "noiseLevel": 36,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.73175695650139,
+    "lng": -73.99690997145578,
+    "noiseLevel": 67,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72377766184421,
+    "lng": -73.99314779705249,
+    "noiseLevel": 29,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72117186741699,
+    "lng": -73.9907678064142,
+    "noiseLevel": 33,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72765249263351,
+    "lng": -74.00191733125378,
+    "noiseLevel": 54,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72228329027629,
+    "lng": -73.99846904622378,
+    "noiseLevel": 57,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7214176746756,
+    "lng": -74.00171181226882,
+    "noiseLevel": 38,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71960505602253,
+    "lng": -73.99675053797986,
+    "noiseLevel": 26,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7272125732228,
+    "lng": -73.99873164322895,
+    "noiseLevel": 24,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.719388619254204,
+    "lng": -73.99781566190457,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7232096947775,
+    "lng": -73.99943787675787,
+    "noiseLevel": 45,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72564426490664,
+    "lng": -73.99420099265922,
+    "noiseLevel": 29,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.723088484942984,
+    "lng": -73.98907177305257,
+    "noiseLevel": 23,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.725174290583055,
+    "lng": -73.99962916481972,
+    "noiseLevel": 30,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.728643810818525,
+    "lng": -74.00269909034928,
+    "noiseLevel": 65,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.718534047600265,
+    "lng": -73.99290628945023,
+    "noiseLevel": 53,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72259903692552,
+    "lng": -74.0037215217902,
+    "noiseLevel": 70,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71911461635738,
+    "lng": -74.00178256925054,
+    "noiseLevel": 21,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7252238646665,
+    "lng": -74.00107611644488,
+    "noiseLevel": 42,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.73157374092238,
+    "lng": -73.99306057484507,
+    "noiseLevel": 34,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.7235944309868,
+    "lng": -73.98889218341466,
+    "noiseLevel": 51,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72302458793322,
+    "lng": -73.99993328999174,
+    "noiseLevel": 41,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72969275330313,
+    "lng": -73.99930357395431,
+    "noiseLevel": 69,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72275812962212,
+    "lng": -73.99436230203163,
+    "noiseLevel": 21,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.720978760025645,
+    "lng": -73.99365825651145,
+    "noiseLevel": 73,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71845783852005,
+    "lng": -73.99895159462848,
+    "noiseLevel": 43,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.725451223254446,
+    "lng": -74.0043080815621,
+    "noiseLevel": 78,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72101126924749,
+    "lng": -73.98936824130833,
+    "noiseLevel": 56,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72935256078502,
+    "lng": -73.99328906711771,
+    "noiseLevel": 33,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.731473920276706,
+    "lng": -74.00148530772393,
+    "noiseLevel": 62,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.728191193743186,
+    "lng": -74.00457112859655,
+    "noiseLevel": 22,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72180895373262,
+    "lng": -73.99072790174475,
+    "noiseLevel": 59,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72726108858638,
+    "lng": -73.99261973533015,
+    "noiseLevel": 74,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72110473229443,
+    "lng": -73.99890142812201,
+    "noiseLevel": 55,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71965327037826,
+    "lng": -73.98987131911389,
+    "noiseLevel": 25,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72872906854708,
+    "lng": -73.99229508628504,
+    "noiseLevel": 51,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.73159796480732,
+    "lng": -73.99582935134531,
+    "noiseLevel": 77,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.724200916728414,
+    "lng": -74.00380261773232,
+    "noiseLevel": 77,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.718954853862904,
+    "lng": -74.00223690885005,
+    "noiseLevel": 62,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72529533318709,
+    "lng": -73.989206044583,
+    "noiseLevel": 24,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71702652345499,
+    "lng": -73.99190090418685,
+    "noiseLevel": 62,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72079801339733,
+    "lng": -73.99243538114219,
+    "noiseLevel": 61,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.725334559210566,
+    "lng": -73.9973596852776,
+    "noiseLevel": 21,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.727724475653176,
+    "lng": -73.99137733246802,
+    "noiseLevel": 66,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72597269190902,
+    "lng": -73.98900595583,
+    "noiseLevel": 24,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.724480664831574,
+    "lng": -74.0040158553144,
+    "noiseLevel": 23,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72418311593095,
+    "lng": -73.99907801814341,
+    "noiseLevel": 65,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.72960136182139,
+    "lng": -73.99464730715563,
+    "noiseLevel": 31,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.727611833788686,
+    "lng": -73.99221646025526,
+    "noiseLevel": 77,
+    "timestamp": 1671082120087
+  },
+  {
+    "lat": 40.71611480718351,
+    "lng": -73.99580527079821,
+    "noiseLevel": 34,
+    "timestamp": 1671082120087
+  }
+]
